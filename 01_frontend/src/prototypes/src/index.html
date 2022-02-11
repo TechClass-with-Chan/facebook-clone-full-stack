@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../dist/main.css" />
   </head>
   <body class="flex flex-row bg-[#F2F2F5] p-0 text-black">
+    <!-- Sidemenu -->
     <div
-      class="hidden flex-none lg:flex lg:w-64 lg:flex-row lg:justify-center xl:w-80"
+      class="hidden flex-none lg:flex lg:w-72 lg:flex-row lg:justify-center xl:w-80"
     >
       <div class="sticky top-0 h-screen pt-14">
         <!-- Menu -->
@@ -241,7 +242,7 @@
                     <path
                       d="M0,23.409V11l8.114,6.2Z"
                       transform="translate(-0.955 -6.705)"
-                      fill="#fbbc05"
+                      fill="#fc05"
                     />
                   </g>
                   <g transform="translate(2 2)" clip-path="url(#clip-path)">
@@ -368,11 +369,6 @@
           >
             Favourites
           </div>
-          <div
-            class="h-12 opacity-50 hover:cursor-pointer hover:border-b-2 hover:border-b-[#5085E8]"
-          >
-            Recommendations
-          </div>
         </div>
       </div>
 
@@ -438,7 +434,7 @@
               <div class="border-l-[1px] border-l-[#EBEBEB]"></div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mx-auto h-9 w-9 self-center stroke-[#5085e8] stroke-1"
+                class="mx-auto h-9 w-9 min-w-[50px] self-center stroke-[#5085e8] stroke-1"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -458,7 +454,7 @@
               ></div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mx-auto hidden h-9 w-9 self-center stroke-[#5085e8] stroke-1 md:block"
+                class="mx-auto hidden h-9 w-9 min-w-[50px] self-center stroke-[#5085e8] stroke-1 md:block"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -719,7 +715,7 @@
 
         <!-- Stories, Events, Requests -->
         <div
-          class="sticky top-6 ml-6 hidden h-min flex-none rounded-[10px] border-[1px] border-[#EBEBEB] bg-white p-6 md:block"
+          class="sticky top-6 ml-6 hidden h-min flex-none rounded-[10px] border-[1px] border-[#EBEBEB] bg-white p-6 xl:block"
         >
           Stories, Events, Requests
         </div>
@@ -728,9 +724,199 @@
 
     <!-- Music Player -->
     <div
-      class="fixed bottom-0 left-0 hidden h-[90px] w-screen bg-[#3C5A99] opacity-90 md:block"
+      class="fixed bottom-0 left-0 hidden h-[90px] w-screen justify-between bg-[#3C5A99] pl-16 pr-16 opacity-90 sm:flex-row md:flex"
     >
-      Music Player
+      <!-- Avatar -->
+      <div class="flex flex-row">
+        <img
+          class="mt-4 h-14 w-14 rounded-full"
+          src="./img/avatar-sergey-brin.png"
+          alt="Sergey Brin"
+        />
+        <div class="ml-4 flex flex-col justify-center">
+          <span class="block text-xl font-light text-white">Sergey Brin</span>
+          <span class="block text-sm text-white opacity-40">It's you</span>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="hidden flex-row lg:flex">
+        <!-- Notification -->
+        <div class="h-full w-20 hover:bg-[#2D4373] hover:bg-opacity-50">
+          <div class="flex h-full w-full flex-col justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-60 hover:cursor-pointer hover:opacity-100"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+              />
+            </svg>
+            <div
+              class="absolute ml-11 mt-5 flex h-5 w-5 flex-row justify-center rounded-full bg-[#E86250]"
+            >
+              <span class="h-5 text-[13px] leading-5 text-white">4</span>
+            </div>
+          </div>
+        </div>
+        <!-- Playlist -->
+        <div
+          class="flex h-full w-20 flex-col justify-center hover:bg-[#2D4373] hover:bg-opacity-50"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-60 hover:cursor-pointer hover:opacity-100"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+            />
+          </svg>
+        </div>
+        <div class="hidden h-full flex-row xl:flex">
+          <!-- Setting -->
+          <div
+            class="flex h-full w-20 flex-col justify-center hover:bg-[#2D4373] hover:bg-opacity-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-60 hover:cursor-pointer hover:opacity-100"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </div>
+          <!-- Search -->
+          <div
+            class="flex h-full w-20 flex-col justify-center hover:bg-[#2D4373] hover:bg-opacity-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-60 hover:cursor-pointer hover:opacity-100"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+          <!-- Messages -->
+          <div
+            class="flex h-full w-20 flex-col justify-center hover:bg-[#2D4373] hover:bg-opacity-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-60 hover:cursor-pointer hover:opacity-100"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Player -->
+      <div class="flex flex-row gap-9">
+        <!-- Controls -->
+        <div class="flex h-full flex-row justify-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-50 hover:cursor-pointer hover:opacity-100"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.333 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-50 hover:cursor-pointer hover:opacity-100"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-50 hover:cursor-pointer hover:opacity-100"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zM19.933 12.8a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z"
+            />
+          </svg>
+        </div>
+        <!-- Music -->
+        <div class="flex w-52 flex-col justify-center xl:w-72 2xl:w-96">
+          <div class="flex h-14 flex-col justify-between">
+            <div class="flex flex-row justify-between">
+              <div>
+                <span class="block text-base text-white">Lose yourself</span>
+                <span class="text-xs text-white opacity-50">Eminem</span>
+              </div>
+              <span class="self-center text-sm text-white opacity-50"
+                >1:10</span
+              >
+            </div>
+            <div>
+              <div class="h-1 w-full rounded-md bg-white opacity-30"></div>
+              <div
+                class="relative -top-1 h-1 w-1/3 rounded-md bg-white opacity-100"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Volume -->
+        <div class="flex h-full flex-col justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 self-center stroke-white stroke-[1.5px] opacity-50 hover:cursor-pointer hover:opacity-100"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+            />
+          </svg>
+        </div>
+      </div>
     </div>
   </body>
 </html>
