@@ -3,10 +3,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Layout</title>
+    <title>Facebook Clone</title>
     <link rel="stylesheet" href="../dist/main.css" />
   </head>
-  <body class="flex flex-row bg-[#F2F2F5] p-0 text-black">
+  <body class="flex flex-row bg-[#F2F2F5] p-0 text-[#454545]">
     <!-- Sidemenu -->
     <div
       class="hidden flex-none lg:flex lg:w-72 lg:flex-row lg:justify-center xl:w-80"
@@ -380,7 +380,7 @@
           >
             <img
               class="h-[50px] w-[50px] flex-none rounded-full object-cover"
-              src="./img/avatar-sergey-brin.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Sergey_Brin_cropped.jpg"
               alt="Sergey Brin"
             />
             <input
@@ -469,13 +469,15 @@
 
           <!-- Feeds -->
           <div class="pb-28">
+            <!-- Feed -->
             <div
               class="mt-4 rounded-[10px] border-[1px] border-[#EBEBEB] bg-white p-6"
             >
+              <!-- User -->
               <div class="flex h-[60px] flex-row">
                 <img
                   class="h-[60px] w-[60px] flex-none rounded-full object-cover"
-                  src="./img/avatar-elon-musk.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
                   alt="Elon Musk"
                 />
                 <div class="ml-6 grow">
@@ -514,13 +516,13 @@
                   </svg>
                 </div>
               </div>
-
+              <!-- Texts -->
               <div class="mt-7 text-[15px]">
                 Our Falcon’ 1st step successfully returned from its’ 9th
                 mission.<br />
                 Gonna try it out next week one more time. Why not?
               </div>
-
+              <!-- Pictures -->
               <div class="mt-5 grid grid-cols-7 gap-4">
                 <img
                   class="col-span-3 h-64 rounded-md object-cover"
@@ -538,26 +540,66 @@
                   alt=""
                 />
               </div>
+              <!-- Actions -->
+              <div class="mt-9 flex flex-row justify-between">
+                <div class="flex flex-row gap-11">
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-8 text-[#D3D8E0]"
+                      >25k</span
+                    >
+                  </div>
 
-              <div class="mt-9 flex flex-row gap-11">
-                <div class="flex flex-row">
-                  <svg
-                    class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1"
-                      d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
-                    />
-                  </svg>
-                  <span class="ml-3 text-xl leading-8 text-[#D3D8E0]">25k</span>
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-7 text-[#D3D8E0]"
+                      >2k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-7 text-[#D3D8E0]"
+                      >542</span
+                    >
+                  </div>
                 </div>
-
-                <div class="flex flex-row">
+                <div>
                   <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -565,38 +607,22 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="1"
-                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                     />
                   </svg>
-                  <span class="ml-3 text-xl leading-7 text-[#D3D8E0]">2k</span>
-                </div>
-
-                <div class="flex flex-row">
-                  <svg
-                    class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1"
-                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
-                    />
-                  </svg>
-                  <span class="ml-3 text-xl leading-7 text-[#D3D8E0]">542</span>
                 </div>
               </div>
             </div>
 
+            <!-- Feed -->
             <div
               class="mt-4 rounded-[10px] border-[1px] border-[#EBEBEB] bg-white p-6"
             >
+              <!-- User -->
               <div class="flex h-[60px] flex-row">
                 <img
                   class="h-[60px] w-[60px] flex-none rounded-full object-cover"
-                  src="./img/avatar-elon-musk.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
                   alt="Elon Musk"
                 />
                 <div class="ml-6 grow">
@@ -635,13 +661,13 @@
                   </svg>
                 </div>
               </div>
-
+              <!-- Texts -->
               <div class="mt-7 text-[15px]">
                 Our Falcon’ 1st step successfully returned from its’ 9th
                 mission.<br />
                 Gonna try it out next week one more time. Why not?
               </div>
-
+              <!-- Pictures -->
               <div class="mt-5 grid grid-cols-7 gap-4">
                 <img
                   class="col-span-3 h-64 rounded-md object-cover"
@@ -659,26 +685,66 @@
                   alt=""
                 />
               </div>
+              <!-- Actions -->
+              <div class="mt-9 flex flex-row justify-between">
+                <div class="flex flex-row gap-11">
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-8 text-[#D3D8E0]"
+                      >25k</span
+                    >
+                  </div>
 
-              <div class="mt-9 flex flex-row gap-11">
-                <div class="flex flex-row">
-                  <svg
-                    class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1"
-                      d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
-                    />
-                  </svg>
-                  <span class="ml-3 text-xl leading-8 text-[#D3D8E0]">25k</span>
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-7 text-[#D3D8E0]"
+                      >2k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-7 text-[#D3D8E0]"
+                      >542</span
+                    >
+                  </div>
                 </div>
-
-                <div class="flex flex-row">
+                <div>
                   <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -686,15 +752,144 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="1"
-                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                     />
                   </svg>
-                  <span class="ml-3 text-xl leading-7 text-[#D3D8E0]">2k</span>
                 </div>
+              </div>
+            </div>
 
-                <div class="flex flex-row">
+            <!-- Feed -->
+            <div
+              class="mt-4 rounded-[10px] border-[1px] border-[#EBEBEB] bg-white p-6"
+            >
+              <!-- User -->
+              <div class="flex h-[60px] flex-row">
+                <img
+                  class="h-[60px] w-[60px] flex-none rounded-full object-cover"
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+                  alt="Elon Musk"
+                />
+                <div class="ml-6 grow">
+                  <div class="flex h-1/2 flex-row">
+                    <span class="text-xl">Elon Musk</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] stroke-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="h-1/2 text-sm leading-7 opacity-50">
+                    8:15 PM, yesterday
+                  </div>
+                </div>
+                <div class="w-8 flex-none">
                   <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 stroke-[#D3D8E0]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- Texts -->
+              <div class="mt-7 text-[15px]">
+                Our Falcon’ 1st step successfully returned from its’ 9th
+                mission.<br />
+                Gonna try it out next week one more time. Why not?
+              </div>
+              <!-- Pictures -->
+              <div class="mt-5 grid grid-cols-7 gap-4">
+                <img
+                  class="col-span-3 h-64 rounded-md object-cover"
+                  src="https://techcrunch.com/wp-content/uploads/2020/12/STR_10.jpg?w=1390&crop=1"
+                  alt=""
+                />
+                <img
+                  class="col-span-2 h-64 rounded-md object-cover"
+                  src="https://1734811051.rsc.cdn77.org/data/images/full/375838/spacex-falcon-9-rocket-and-crew-dragon-capsule-launches-from-cape-canaveral-sending-astronauts-to-the-international-space-station.jpg"
+                  alt=""
+                />
+                <img
+                  class="col-span-2 h-64 rounded-md object-cover"
+                  src="https://content.fortune.com/wp-content/uploads/2016/09/478872958.jpg?resize=750,500"
+                  alt=""
+                />
+              </div>
+              <!-- Actions -->
+              <div class="mt-9 flex flex-row justify-between">
+                <div class="flex flex-row gap-11">
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-8 text-[#D3D8E0]"
+                      >25k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-7 text-[#D3D8E0]"
+                      >2k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-row">
+                    <svg
+                      class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                      />
+                    </svg>
+                    <span class="ml-3 text-xl leading-7 text-[#D3D8E0]"
+                      >542</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     class="h-8 w-8 stroke-[#D3D8E0] hover:cursor-pointer hover:stroke-[#5085E8]"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -702,11 +897,9 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="1"
-                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
                     />
                   </svg>
-                  <span class="ml-3 text-xl leading-7 text-[#D3D8E0]">542</span>
                 </div>
               </div>
             </div>
@@ -715,9 +908,212 @@
 
         <!-- Stories, Events, Requests -->
         <div
-          class="sticky top-6 ml-6 hidden h-min flex-none rounded-[10px] border-[1px] border-[#EBEBEB] bg-white p-6 xl:block"
+          class="sticky top-6 ml-6 hidden h-min flex-none rounded-[10px] border-[1px] border-[#EBEBEB] bg-white p-6 2xl:block"
         >
-          Stories, Events, Requests
+          <!-- Stories -->
+          <div>
+            <span class="text-xl">Stories</span>
+            <div class="mt-7">
+              <div class="flex flex-row gap-5">
+                <div
+                  class="flex h-16 w-16 flex-col justify-center rounded-full bg-[#5085E8] hover:cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 self-center stroke-white stroke-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex h-16 w-16 flex-col justify-center rounded-full border-[2px] border-[#5085E8]"
+                >
+                  <img
+                    class="h-12 w-12 self-center rounded-full object-cover"
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+                    alt="Elon Musk"
+                  />
+                </div>
+                <div
+                  class="flex h-16 w-16 flex-col justify-center rounded-full border-[2px] border-[#5085E8]"
+                >
+                  <img
+                    class="h-12 w-12 self-center rounded-full object-cover"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tim_Cook_%282017%2C_cropped%29.jpg/800px-Tim_Cook_%282017%2C_cropped%29.jpg"
+                    alt="Tim Cook"
+                  />
+                </div>
+                <div
+                  class="flex h-16 w-16 flex-col justify-center rounded-full border-[2px] border-[#5085E8]"
+                >
+                  <img
+                    class="h-12 w-12 self-center rounded-full object-cover"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg/800px-MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg"
+                    alt="Satya Nadella"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming events -->
+          <div class="mt-12 text-xl">
+            <div class="flex flex-row justify-between">
+              <span>Upcoming events</span>
+              <a class="text-[#5085E8]" href="#">All</a>
+            </div>
+            <div>
+              <img
+                class="mt-7 h-36 w-full object-cover"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/1280px-Googleplex_HQ_%28cropped%29.jpg"
+                alt="Google open meetup - Pixel"
+              />
+              <span class="mt-6 block text-base"
+                >Google open meetup - Pixel</span
+              >
+              <span class="text-xs opacity-50">3:10 PM, Today</span>
+            </div>
+          </div>
+
+          <!-- Friend requests -->
+          <div class="mt-12 text-xl">
+            <div class="flex flex-row justify-between">
+              <span>Friend requests</span>
+              <a class="text-[#5085E8]" href="#">All</a>
+            </div>
+            <!-- Requests -->
+            <div class="mt-2">
+              <div class="mt-6 flex flex-row gap-5">
+                <div class="h-12 flex-none">
+                  <img
+                    class="h-12 w-12 rounded-full object-cover"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/800px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg"
+                    alt="Jeff Brezos"
+                  />
+                </div>
+                <div class="grow">
+                  <div class="text-base">Jeff Brezos</div>
+                  <div class="text-sm opacity-50">Amazon</div>
+                </div>
+                <div class="flex flex-none flex-col justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 stroke-[#D3D8E0]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-none flex-col justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 stroke-[#D3D8E0] stroke-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-row gap-5">
+                <div class="h-12 flex-none">
+                  <img
+                    class="h-12 w-12 rounded-full object-cover"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bill_Gates_2017_%28cropped%29.jpg/800px-Bill_Gates_2017_%28cropped%29.jpg"
+                    alt="Bill Gates"
+                  />
+                </div>
+                <div class="grow">
+                  <div class="text-base">Bill Gates</div>
+                  <div class="text-sm opacity-50">Microsoft</div>
+                </div>
+                <div class="flex flex-none flex-col justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 stroke-[#D3D8E0]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-none flex-col justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 stroke-[#D3D8E0] stroke-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-row gap-5">
+                <div class="h-12 flex-none">
+                  <img
+                    class="h-12 w-12 rounded-full object-cover"
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Sundar_Pichai_%28cropped1%29.jpg"
+                    alt="Sundar Pichai"
+                  />
+                </div>
+                <div class="grow">
+                  <div class="text-base">Sundar Pichai</div>
+                  <div class="text-sm opacity-50">Google</div>
+                </div>
+                <div class="flex flex-none flex-col justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 stroke-[#D3D8E0]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-none flex-col justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 stroke-[#D3D8E0] stroke-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -729,8 +1125,8 @@
       <!-- Avatar -->
       <div class="flex flex-row">
         <img
-          class="mt-4 h-14 w-14 rounded-full"
-          src="./img/avatar-sergey-brin.png"
+          class="mt-4 h-14 w-14 rounded-full object-cover"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Sergey_Brin_cropped.jpg"
           alt="Sergey Brin"
         />
         <div class="ml-4 flex flex-col justify-center">
