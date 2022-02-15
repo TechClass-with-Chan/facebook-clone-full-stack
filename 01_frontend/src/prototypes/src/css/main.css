@@ -10,3 +10,21 @@
     @apply border-[1px] border-red-500;
   }
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply h-2 w-5;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply rounded-lg bg-gray-100;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-lg border-2 border-solid border-gray-100 bg-[#D3D8E0];
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#5085E8];
+  }
+}
