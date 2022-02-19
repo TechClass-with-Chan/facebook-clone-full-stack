@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook Clone</title>
     <link rel="stylesheet" href="../dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="flex flex-row bg-[#F2F2F5] p-0 text-[#454545]">
+  <body class="text-primary font-montserrat flex flex-row bg-[#F2F2F5] p-0">
     <!-- Sidemenu -->
     <div
-      class="hidden flex-none lg:flex lg:w-72 lg:flex-row lg:justify-center xl:w-80"
+      class="font-raleway hidden flex-none lg:flex lg:w-72 lg:flex-row lg:justify-center xl:w-80"
     >
       <div class="sticky top-0 h-screen pt-14">
         <!-- Menu -->
@@ -40,14 +46,14 @@
                   />
                 </svg>
               </div>
-              <div class="col-span-4 h-8 text-[17px] leading-7 text-[#454545]">
+              <div class="text-primary col-span-4 h-8 text-[17px] leading-7">
                 News
               </div>
             </div>
             <div class="col-span-1 mx-auto flex h-8 flex-col justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7 stroke-[#D3D8E0]"
+                class="stroke-light h-7 w-7"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -81,7 +87,7 @@
                   />
                 </svg>
               </div>
-              <div class="col-span-4 h-8 text-[17px] leading-7 text-[#454545]">
+              <div class="text-primary col-span-4 h-8 text-[17px] leading-7">
                 Messages
               </div>
             </div>
@@ -114,7 +120,7 @@
               </svg>
             </div>
 
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Friends
             </div>
           </div>
@@ -139,7 +145,7 @@
               </svg>
             </div>
 
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Communities
             </div>
           </div>
@@ -164,7 +170,7 @@
                 />
               </svg>
             </div>
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Events
             </div>
           </div>
@@ -188,7 +194,7 @@
                 />
               </svg>
             </div>
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Pages
             </div>
           </div>
@@ -212,7 +218,7 @@
                 />
               </svg>
             </div>
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Manage apps
             </div>
           </div>
@@ -270,7 +276,7 @@
               </svg>
             </div>
             <div
-              class="col-span-5 h-8 text-[17px] text-[#454545] opacity-70 hover:opacity-100"
+              class="text-primary col-span-5 h-8 text-[17px] opacity-70 hover:opacity-100"
             >
               Google Inc.
             </div>
@@ -290,7 +296,7 @@
               </svg>
             </div>
             <div
-              class="col-span-5 h-8 text-[17px] text-[#454545] opacity-70 hover:opacity-100"
+              class="text-primary col-span-5 h-8 text-[17px] opacity-70 hover:opacity-100"
             >
               Y Combinator
             </div>
@@ -326,7 +332,7 @@
             </div>
 
             <div
-              class="col-span-5 h-8 text-[17px] text-[#454545] opacity-70 hover:opacity-100"
+              class="text-primary col-span-5 h-8 text-[17px] opacity-70 hover:opacity-100"
             >
               Amazon
             </div>
@@ -336,36 +342,34 @@
     </div>
 
     <!-- Content -->
-    <div
-      class="h-fit min-h-screen grow bg-[#F6F6F9] p-10 shadow-[0_3px_25px_0_rgb(0,0,0,0.15)]"
-    >
+    <div class="shadow-large h-fit min-h-screen grow bg-[#F6F6F9] p-10">
       <!-- Navigator -->
       <div
-        class="flex h-12 flex-row gap-12 whitespace-nowrap border-b-2 border-b-[#EBEBEB] text-[1.4rem]"
+        class="border-b-muted flex h-12 flex-row gap-12 whitespace-nowrap border-b-2 text-[1.4rem]"
       >
         <div
-          class="h-12 opacity-100 hover:cursor-pointer hover:border-b-2 hover:border-b-[#5085E8]"
+          class="hover:border-b-highlight h-12 opacity-100 hover:cursor-pointer hover:border-b-2"
         >
           All friends
         </div>
         <div
-          class="h-12 opacity-50 hover:cursor-pointer hover:border-b-2 hover:border-b-[#5085E8]"
+          class="hover:border-b-highlight h-12 opacity-50 hover:cursor-pointer hover:border-b-2"
         >
           Work
         </div>
         <div class="hidden xl:flex xl:gap-12">
           <div
-            class="h-12 opacity-50 hover:cursor-pointer hover:border-b-2 hover:border-b-[#5085E8]"
+            class="hover:border-b-highlight h-12 opacity-50 hover:cursor-pointer hover:border-b-2"
           >
             Highschool
           </div>
           <div
-            class="h-12 opacity-50 hover:cursor-pointer hover:border-b-2 hover:border-b-[#5085E8]"
+            class="hover:border-b-highlight h-12 opacity-50 hover:cursor-pointer hover:border-b-2"
           >
             Hometown
           </div>
           <div
-            class="h-12 opacity-50 hover:cursor-pointer hover:border-b-2 hover:border-b-[#5085E8]"
+            class="hover:border-b-highlight h-12 opacity-50 hover:cursor-pointer hover:border-b-2"
           >
             Following
           </div>
@@ -376,7 +380,7 @@
       <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 2xl:grid-cols-3">
         <!-- Friend -->
         <div
-          class="col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] border-[#EBEBEB] bg-white shadow-[0_3px_0_rgb(211,216,224,0.4)] hover:cursor-pointer"
+          class="border-muted shadow-small col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] bg-white hover:cursor-pointer"
         >
           <!-- Avatar -->
           <img
@@ -390,7 +394,7 @@
               <span class="whitespace-nowrap text-xl font-bold">Elon Musk</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 self-center stroke-[#A9C7FD]"
+                class="stroke-medal h-6 w-6 self-center"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -409,7 +413,7 @@
 
         <!-- Friend -->
         <div
-          class="col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] border-[#EBEBEB] bg-white shadow-[0_3px_0_rgb(211,216,224,0.4)] hover:cursor-pointer"
+          class="border-muted shadow-small col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] bg-white hover:cursor-pointer"
         >
           <!-- Avatar -->
           <img
@@ -423,7 +427,7 @@
               <span class="whitespace-nowrap text-xl font-bold">Elon Musk</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 self-center stroke-[#A9C7FD]"
+                class="stroke-medal h-6 w-6 self-center"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -442,7 +446,7 @@
 
         <!-- Friend -->
         <div
-          class="col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] border-[#EBEBEB] bg-white shadow-[0_3px_0_rgb(211,216,224,0.4)] hover:cursor-pointer"
+          class="border-muted shadow-small col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] bg-white hover:cursor-pointer"
         >
           <!-- Avatar -->
           <img
@@ -456,7 +460,7 @@
               <span class="whitespace-nowrap text-xl font-bold">Elon Musk</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 self-center stroke-[#A9C7FD]"
+                class="stroke-medal h-6 w-6 self-center"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -475,7 +479,7 @@
 
         <!-- Friend -->
         <div
-          class="col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] border-[#EBEBEB] bg-white shadow-[0_3px_0_rgb(211,216,224,0.4)] hover:cursor-pointer"
+          class="border-muted shadow-small col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] bg-white hover:cursor-pointer"
         >
           <!-- Avatar -->
           <img
@@ -489,7 +493,7 @@
               <span class="whitespace-nowrap text-xl font-bold">Elon Musk</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 self-center stroke-[#A9C7FD]"
+                class="stroke-medal h-6 w-6 self-center"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -508,7 +512,7 @@
 
         <!-- Friend -->
         <div
-          class="col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] border-[#EBEBEB] bg-white shadow-[0_3px_0_rgb(211,216,224,0.4)] hover:cursor-pointer"
+          class="border-muted shadow-small col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] bg-white hover:cursor-pointer"
         >
           <!-- Avatar -->
           <img
@@ -522,7 +526,7 @@
               <span class="whitespace-nowrap text-xl font-bold">Elon Musk</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 self-center stroke-[#A9C7FD]"
+                class="stroke-medal h-6 w-6 self-center"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -543,7 +547,7 @@
 
     <!-- Music Player -->
     <div
-      class="fixed bottom-0 left-0 hidden h-[90px] w-screen justify-between bg-[#3C5A99] pl-16 pr-16 opacity-90 sm:flex-row md:flex"
+      class="bg-selected fixed bottom-0 left-0 hidden h-[90px] w-screen justify-between pl-16 pr-16 opacity-90 sm:flex-row md:flex"
     >
       <!-- Avatar -->
       <div class="flex flex-row">

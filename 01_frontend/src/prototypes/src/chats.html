@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook Clone</title>
     <link rel="stylesheet" href="../dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="flex flex-row bg-[#F2F2F5] p-0 text-[#454545]">
+  <body class="text-primary font-montserrat flex flex-row bg-[#F2F2F5] p-0">
     <!-- Sidemenu -->
     <div
-      class="hidden flex-none lg:flex lg:w-72 lg:flex-row lg:justify-center xl:w-80"
+      class="font-raleway hidden flex-none lg:flex lg:w-72 lg:flex-row lg:justify-center xl:w-80"
     >
       <div class="sticky top-0 h-screen pt-14">
         <!-- Menu -->
@@ -40,14 +46,14 @@
                   />
                 </svg>
               </div>
-              <div class="col-span-4 h-8 text-[17px] leading-7 text-[#454545]">
+              <div class="text-primary col-span-4 h-8 text-[17px] leading-7">
                 News
               </div>
             </div>
             <div class="col-span-1 mx-auto flex h-8 flex-col justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7 stroke-[#D3D8E0]"
+                class="stroke-light h-7 w-7"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -81,7 +87,7 @@
                   />
                 </svg>
               </div>
-              <div class="col-span-4 h-8 text-[17px] leading-7 text-[#454545]">
+              <div class="text-primary col-span-4 h-8 text-[17px] leading-7">
                 Messages
               </div>
             </div>
@@ -114,7 +120,7 @@
               </svg>
             </div>
 
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Friends
             </div>
           </div>
@@ -139,7 +145,7 @@
               </svg>
             </div>
 
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Communities
             </div>
           </div>
@@ -164,7 +170,7 @@
                 />
               </svg>
             </div>
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Events
             </div>
           </div>
@@ -188,7 +194,7 @@
                 />
               </svg>
             </div>
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Pages
             </div>
           </div>
@@ -212,7 +218,7 @@
                 />
               </svg>
             </div>
-            <div class="col-span-5 h-8 text-[17px] leading-7 text-[#454545]">
+            <div class="text-primary col-span-5 h-8 text-[17px] leading-7">
               Manage apps
             </div>
           </div>
@@ -270,7 +276,7 @@
               </svg>
             </div>
             <div
-              class="col-span-5 h-8 text-[17px] text-[#454545] opacity-70 hover:opacity-100"
+              class="text-primary col-span-5 h-8 text-[17px] opacity-70 hover:opacity-100"
             >
               Google Inc.
             </div>
@@ -290,7 +296,7 @@
               </svg>
             </div>
             <div
-              class="col-span-5 h-8 text-[17px] text-[#454545] opacity-70 hover:opacity-100"
+              class="text-primary col-span-5 h-8 text-[17px] opacity-70 hover:opacity-100"
             >
               Y Combinator
             </div>
@@ -326,7 +332,7 @@
             </div>
 
             <div
-              class="col-span-5 h-8 text-[17px] text-[#454545] opacity-70 hover:opacity-100"
+              class="text-primary col-span-5 h-8 text-[17px] opacity-70 hover:opacity-100"
             >
               Amazon
             </div>
@@ -336,13 +342,11 @@
     </div>
 
     <!-- Content -->
-    <div
-      class="flex h-screen min-h-screen grow flex-row bg-white shadow-[0_3px_25px_0_rgb(0,0,0,0.15)]"
-    >
+    <div class="shadow-large flex h-screen min-h-screen grow flex-row bg-white">
       <div class="flex grow flex-col md:pb-[90px]">
         <!-- Avatar, Action -->
         <div
-          class="flex h-24 flex-none flex-row justify-between border-b-[1px] border-[#EBEBEB] px-8 py-5"
+          class="border-muted flex h-24 flex-none flex-row justify-between border-b-[1px] px-8 py-5"
         >
           <!-- Avatar -->
           <div class="flex h-full flex-row gap-6">
@@ -357,7 +361,7 @@
             >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 flex-none self-center stroke-[#A9C7FD] opacity-50"
+              class="stroke-medal h-6 w-6 flex-none self-center opacity-50"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -372,7 +376,7 @@
           <div class="flex flex-row gap-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+              class="hover:stroke-highlight stroke-light h-7 w-7 self-center stroke-[1.5px] hover:cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -384,7 +388,7 @@
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+              class="hover:stroke-highlight stroke-light h-7 w-7 self-center stroke-[1.5px] hover:cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -396,7 +400,7 @@
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+              class="hover:stroke-highlight stroke-light h-7 w-7 self-center stroke-[1.5px] hover:cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -411,7 +415,7 @@
 
         <!-- Message -->
         <div
-          class="scrollbar grow overflow-y-scroll border-b-[1px] border-[#EBEBEB] px-8 pb-4"
+          class="scrollbar border-muted grow overflow-y-scroll border-b-[1px] px-8 pb-4"
         >
           <div class="mt-12 flex flex-row gap-6">
             <p class="max-w-fit rounded-2xl bg-[#F4F4F4] p-6 text-base">
@@ -473,12 +477,12 @@
 
         <!-- Write a message -->
         <div
-          class="flex h-24 flex-none flex-row border-b-[1px] border-[#EBEBEB] px-8 py-5"
+          class="border-muted flex h-24 flex-none flex-row border-b-[1px] px-8 py-5"
         >
           <!-- Attachment -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+            class="hover:stroke-highlight stroke-light h-8 w-8 self-center stroke-[1.5px] hover:cursor-pointer"
             fill="none"
             viewBox="0 0 24 24"
           >
@@ -498,7 +502,7 @@
           <div class="ml-8 flex flex-row gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+              class="hover:stroke-highlight stroke-light h-8 w-8 self-center stroke-[1.5px] hover:cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -510,7 +514,7 @@
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+              class="hover:stroke-highlight stroke-light h-8 w-8 self-center stroke-[1.5px] hover:cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -525,7 +529,7 @@
           <div class="ml-4 hidden flex-row gap-4 border-l-[1px] pl-4 xl:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+              class="hover:stroke-highlight stroke-light h-8 w-8 self-center stroke-[1.5px] hover:cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -537,7 +541,7 @@
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 self-center stroke-[#D3D8E0] stroke-[1.5px] hover:cursor-pointer hover:stroke-[#5085E8]"
+              class="hover:stroke-highlight stroke-light h-8 w-8 self-center stroke-[1.5px] hover:cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
             >
@@ -551,15 +555,15 @@
         </div>
       </div>
       <div
-        class="hidden h-screen flex-none flex-col border-l-[1px] border-[#EBEBEB] md:flex"
+        class="border-muted hidden h-screen flex-none flex-col border-l-[1px] md:flex"
       >
         <!-- Search -->
         <div
-          class="flex h-24 flex-none flex-row border-b-[1px] border-[#EBEBEB] p-8"
+          class="border-muted flex h-24 flex-none flex-row border-b-[1px] p-8"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 flex-none self-center stroke-[#D3D8E0] stroke-2"
+            class="stroke-light h-6 w-6 flex-none self-center stroke-2"
             fill="none"
             viewBox="0 0 24 24"
           >
@@ -576,7 +580,7 @@
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 flex-none self-center stroke-[#5085E8] stroke-2"
+            class="stroke-highlight h-6 w-6 flex-none self-center stroke-2"
             fill="none"
             viewBox="0 0 24 24"
           >
@@ -589,20 +593,20 @@
         </div>
         <!-- Category -->
         <div
-          class="flex h-16 flex-none flex-row gap-11 border-b-[1px] border-[#EBEBEB]"
+          class="border-muted flex h-16 flex-none flex-row gap-11 border-b-[1px]"
         >
           <div
-            class="ml-8 flex h-full flex-col justify-center border-b-[1px] border-[#5085E8] hover:cursor-pointer hover:border-b-[1px] hover:border-b-[#5085E8]"
+            class="border-highlight hover:border-b-highlight ml-8 flex h-full flex-col justify-center border-b-[1px] hover:cursor-pointer hover:border-b-[1px]"
           >
             All
           </div>
           <div
-            class="flex h-full flex-col justify-center hover:cursor-pointer hover:border-b-[1px] hover:border-b-[#5085E8]"
+            class="hover:border-b-highlight flex h-full flex-col justify-center hover:cursor-pointer hover:border-b-[1px]"
           >
             Unread
           </div>
           <div
-            class="flex h-full flex-col justify-center hover:cursor-pointer hover:border-b-[1px] hover:border-b-[#5085E8]"
+            class="hover:border-b-highlight flex h-full flex-col justify-center hover:cursor-pointer hover:border-b-[1px]"
           >
             Important
           </div>
@@ -611,7 +615,7 @@
         <div class="scrollbar grow overflow-scroll pb-20">
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-[#3C5A99] hover:bg-opacity-80 md:justify-between"
+            class="hover:bg-selected flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-opacity-80 md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -623,7 +627,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -641,7 +645,7 @@
             <div class="flex flex-col">
               <span class="text-sm opacity-50">22.01</span>
               <div
-                class="mt-3 flex h-5 w-5 flex-row justify-center self-end rounded-full bg-[#3C5A99]"
+                class="bg-selected mt-3 flex h-5 w-5 flex-row justify-center self-end rounded-full"
               >
                 <span class="h-5 text-[13px] leading-5 text-white">7</span>
               </div>
@@ -650,7 +654,7 @@
 
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 bg-[#3C5A99] px-6 py-5 text-white hover:cursor-pointer md:justify-between"
+            class="bg-selected flex flex-row gap-6 px-6 py-5 text-white hover:cursor-pointer md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -662,7 +666,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -681,7 +685,7 @@
               <span class="text-sm opacity-50">22.01</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-2 h-6 w-6 self-end stroke-[#D3D8E0]"
+                class="stroke-light mt-2 h-6 w-6 self-end"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -696,7 +700,7 @@
 
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-[#3C5A99] hover:bg-opacity-80 md:justify-between"
+            class="hover:bg-selected flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-opacity-80 md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -708,7 +712,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -727,7 +731,7 @@
               <span class="text-sm opacity-50">22.01</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-2 h-6 w-6 self-end stroke-[#D3D8E0]"
+                class="stroke-light mt-2 h-6 w-6 self-end"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -742,7 +746,7 @@
 
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-[#3C5A99] hover:bg-opacity-80 md:justify-between"
+            class="hover:bg-selected flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-opacity-80 md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -754,7 +758,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -773,7 +777,7 @@
               <span class="text-sm opacity-50">22.01</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-2 h-6 w-6 self-end stroke-[#D3D8E0]"
+                class="stroke-light mt-2 h-6 w-6 self-end"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -788,7 +792,7 @@
 
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-[#3C5A99] hover:bg-opacity-80 md:justify-between"
+            class="hover:bg-selected flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-opacity-80 md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -800,7 +804,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -819,7 +823,7 @@
               <span class="text-sm opacity-50">22.01</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-2 h-6 w-6 self-end stroke-[#D3D8E0]"
+                class="stroke-light mt-2 h-6 w-6 self-end"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -834,7 +838,7 @@
 
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-[#3C5A99] hover:bg-opacity-80 md:justify-between"
+            class="hover:bg-selected flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-opacity-80 md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -846,7 +850,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -865,7 +869,7 @@
               <span class="text-sm opacity-50">22.01</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-2 h-6 w-6 self-end stroke-[#D3D8E0]"
+                class="stroke-light mt-2 h-6 w-6 self-end"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -880,7 +884,7 @@
 
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-[#3C5A99] hover:bg-opacity-80 md:justify-between"
+            class="hover:bg-selected flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-opacity-80 md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -892,7 +896,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -911,7 +915,7 @@
               <span class="text-sm opacity-50">22.01</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-2 h-6 w-6 self-end stroke-[#D3D8E0]"
+                class="stroke-light mt-2 h-6 w-6 self-end"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -926,7 +930,7 @@
 
           <!-- Person -->
           <div
-            class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-[#3C5A99] hover:bg-opacity-80 md:justify-between"
+            class="hover:bg-selected flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-opacity-80 md:justify-between"
           >
             <img
               class="h-12 w-12 rounded-full object-cover"
@@ -938,7 +942,7 @@
                 <span class="text-xl">Elon Musk</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="ml-6 h-6 w-6 self-center stroke-[#A9C7FD] opacity-50"
+                  class="stroke-medal ml-6 h-6 w-6 self-center opacity-50"
                   fill="none"
                   viewBox="0 0 24 24"
                 >
@@ -957,7 +961,7 @@
               <span class="text-sm opacity-50">22.01</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="mt-2 h-6 w-6 self-end stroke-[#D3D8E0]"
+                class="stroke-light mt-2 h-6 w-6 self-end"
                 fill="none"
                 viewBox="0 0 24 24"
               >
@@ -975,7 +979,7 @@
 
     <!-- Music Player -->
     <div
-      class="fixed bottom-0 left-0 hidden h-[90px] w-screen justify-between bg-[#3C5A99] pl-16 pr-16 opacity-90 sm:flex-row md:flex"
+      class="bg-selected fixed bottom-0 left-0 hidden h-[90px] w-screen justify-between pl-16 pr-16 opacity-90 sm:flex-row md:flex"
     >
       <!-- Avatar -->
       <div class="flex flex-row">

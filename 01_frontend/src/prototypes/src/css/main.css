@@ -21,10 +21,10 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    @apply rounded-lg border-2 border-solid border-gray-100 bg-[#D3D8E0];
+    @apply bg-light rounded-lg border-2 border-solid border-gray-100;
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
-    @apply bg-[#5085E8];
+    @apply bg-highlight;
   }
 }
