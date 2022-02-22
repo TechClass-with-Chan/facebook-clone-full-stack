@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bb {
+    @apply border-[1px] border-black;
+  }
+  .bbr {
+    @apply border-[1px] border-red-500;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply h-2 w-3;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    @apply rounded-lg bg-gray-100;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-light rounded-lg border-2 border-solid border-gray-100;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-highlight;
+  }
+}

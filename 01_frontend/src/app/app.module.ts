@@ -8,6 +8,8 @@ import { FeedsComponent } from './pages/feeds/feeds.component';
 import { FriendsComponent } from './pages/friends/friends.component';
 import { ChatsComponent } from './pages/chats/chats.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NgIconsModule } from '@ng-icons/core';
+import { HeroNewspaper } from '@ng-icons/heroicons';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,14 @@ import { AppRoutingModule } from './app-routing.module';
     MusicPlayerComponent,
     FeedsComponent,
     FriendsComponent,
-    ChatsComponent
+    ChatsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgIconsModule.withIcons({ HeroNewspaper }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
