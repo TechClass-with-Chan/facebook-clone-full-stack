@@ -1,8 +1,94 @@
-<p>sidemenu works!</p>
+<div class="sticky inset-0 pt-14">
+  <!-- Menu -->
+  <div class="h-full">
+    <img
+      class="h-12 w-12"
+      src="assets/logo/facebook.svg"
+      alt="Facebook Clone"
+    />
 
-<div class="flex flex-col text-highlight">
-  <a routerLink="/feeds">Feeds</a>
-  <a routerLink="/friends">Friends</a>
-  <a routerLink="/profile">Profile</a>
-  <a routerLink="/chats">Chats</a>
+    <span class="mt-12 block text-lg font-bold">Menu</span>
+
+    <ul>
+      <li class="mt-4">
+        <app-sidemenu-item
+          icon="hero-newspaper"
+          text="News"
+          [showOptions]="true"
+          href="/feeds"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          icon="hero-annotation"
+          text="Messages"
+          [badgeNumber]="8"
+          href="/chats"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          icon="hero-user"
+          text="Friends"
+          href="/friends"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          icon="hero-users"
+          text="Communities"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          icon="hero-calendar"
+          text="Events"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          icon="hero-book-open"
+          text="Pages"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          icon="hero-cube"
+          text="Manage apps"
+        ></app-sidemenu-item>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Shortcuts -->
+  <div class="h-full mt-10">
+    <span class="block text-lg font-bold">Shortcuts</span>
+
+    <ul>
+      <li class="mt-4">
+        <app-sidemenu-item
+          img="assets/logo/google.svg"
+          text="Google Inc."
+          href="https://www.google.com"
+          [external]="true"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          img="assets/logo/y-combinator.svg"
+          text="Y Combinator"
+          href="https://www.ycombinator.com"
+          [external]="true"
+        ></app-sidemenu-item>
+      </li>
+      <li class="mt-4">
+        <app-sidemenu-item
+          img="assets/logo/amazon.svg"
+          text="Amazon"
+          href="https://www.amazon.com"
+          [external]="true"
+        ></app-sidemenu-item>
+      </li>
+    </ul>
+  </div>
 </div>

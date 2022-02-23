@@ -1,3 +1,12 @@
-<app-sidemenu></app-sidemenu>
-<router-outlet></router-outlet>
-<app-music-player></app-music-player>
+<div class="text-primary bg-[#F2F2F5] font-montserrat flex flex-row p-0">
+  <!-- Sidemenu -->
+  <div class="font-raleway flex-none flex px-16 flex-row justify-center">
+    <app-sidemenu></app-sidemenu>
+  </div>
+  <!-- Content -->
+  <div class="shadow-large h-fit min-h-screen grow bg-[#F6F6F9] p-10">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- Music Player -->
+  <app-music-player></app-music-player>
+</div>

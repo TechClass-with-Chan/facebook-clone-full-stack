@@ -1,0 +1,47 @@
+<div class="h-8 flex flex-row">
+  <a
+    *ngIf="external"
+    [href]="href"
+    target="_blank"
+    class="flex-grow flex flex-row h-full gap-4 hover:font-bold hover:opacity-100 hover:cursor-pointer"
+  >
+    <img *ngIf="img" class="w-5 h-5 self-center" [src]="img" alt="" />
+    <div
+      class="col-span-4 h-8 text-lg leading-8 grow opacity-70 hover:opacity-100 min-w-[120px]"
+    >
+      {{ text }}
+    </div>
+  </a>
+  <a
+    *ngIf="!external"
+    [routerLink]="href"
+    class="flex-grow flex flex-row h-full gap-4 hover:font-bold opacity-70 hover:opacity-100 hover:cursor-pointer"
+  >
+    <img *ngIf="img" class="w-5 h-5 self-center" [src]="img" alt="" />
+    <ng-icon
+      *ngIf="icon"
+      [name]="icon"
+      size="26"
+      strokeWidth="1"
+      class="flex-none self-center"
+    ></ng-icon>
+    <div class="col-span-4 h-8 text-lg leading-8 grow min-w-[120px]">
+      {{ text }}
+    </div>
+  </a>
+  <div class="flex-none w-7 flex flex-row justify-center">
+    <ng-icon
+      *ngIf="showOptions"
+      name="hero-dots-horizontal"
+      size="28"
+      strokeWidth="3"
+      class="self-center text-light"
+    ></ng-icon>
+    <div
+      *ngIf="badgeNumber"
+      class="w-5 h-5 rounded-full bg-red-500 flex flex-row justify-center self-center"
+    >
+      <span class="text-sm text-white leading-5">{{ badgeNumber }}</span>
+    </div>
+  </div>
+</div>
