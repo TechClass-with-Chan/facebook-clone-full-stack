@@ -43,6 +43,10 @@ import {
   HeroVolumeUp,
 } from '@ng-icons/heroicons';
 import { SidemenuItemComponent } from './components/sidemenu-item/sidemenu-item.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
+import { FeedCardComponent } from './components/feed-card/feed-card.component';
+import { StoryEventRequestComponent } from './components/story-event-request/story-event-request.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +57,10 @@ import { SidemenuItemComponent } from './components/sidemenu-item/sidemenu-item.
     FriendsComponent,
     ChatsComponent,
     SidemenuItemComponent,
+    NavbarComponent,
+    CreatePostComponent,
+    FeedCardComponent,
+    StoryEventRequestComponent,
   ],
   imports: [
     BrowserModule,

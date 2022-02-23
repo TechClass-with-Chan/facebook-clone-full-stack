@@ -1,0 +1,12 @@
+<div class="border-b-muted border-b-2 h-12 text-[23px] flex flex-row gap-12">
+  <ng-container *ngFor="let nav of navigations">
+    <a
+      [routerLink]="nav.url"
+      [ngClass]="{
+        'opacity-100 font-medium border-b-highlight border-b-2': nav.highlighted
+      }"
+      class="hover:border-b-highlight hover:border-b-2 h-12 block leading-10 opacity-50 hover:opacity-100"
+      >{{ nav.text }}</a
+    >
+  </ng-container>
+</div>

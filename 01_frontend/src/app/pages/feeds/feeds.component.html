@@ -1,1 +1,23 @@
-<p>feeds works!</p>
+<!-- Navigator -->
+<div>
+  <app-navbar></app-navbar>
+</div>
+
+<div class="mt-8 flex flex-row">
+  <div class="grow">
+    <!-- Create a post -->
+    <app-create-post></app-create-post>
+
+    <!-- Feeds -->
+    <div>
+      <app-feed-card></app-feed-card>
+      <app-feed-card></app-feed-card>
+      <app-feed-card></app-feed-card>
+    </div>
+  </div>
+
+  <!-- Stories, Events, Requests -->
+  <div class="sticky top-6 ml-6 flex-none h-min">
+    <app-story-event-request></app-story-event-request>
+  </div>
+</div>
