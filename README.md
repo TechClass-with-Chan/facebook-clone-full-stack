@@ -3,7 +3,7 @@ A full-stack clone of Facebook based on the winner's redesign from UpLabs challe
 
 ## 1. Demo
 
-https://localhost
+https://facebook-clone-full-stack.web.app
 
 ## 2. The UI redesigned by the winner ([Michael Glazyri](https://www.uplabs.com/relictos))
 

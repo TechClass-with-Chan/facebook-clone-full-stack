@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "facebook-clone-full-stack": {
+      "hosting": {
+        "facebook-clone": [
+          "facebook-clone-full-stack"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "facebook-clone-full-stack"
+  }
+}
