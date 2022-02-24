@@ -23,6 +23,7 @@ import {
   HeroCollection,
   HeroCube,
   HeroDotsHorizontal,
+  HeroDotsVertical,
   HeroEmojiHappy,
   HeroFastForward,
   HeroLocationMarker,
@@ -47,6 +48,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { FeedCardComponent } from './components/feed-card/feed-card.component';
 import { StoryEventRequestComponent } from './components/story-event-request/story-event-request.component';
+import { FriendRequestComponent } from './components/story-event-request/friend-request/friend-request.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,7 @@ import { StoryEventRequestComponent } from './components/story-event-request/sto
     CreatePostComponent,
     FeedCardComponent,
     StoryEventRequestComponent,
+    FriendRequestComponent,
   ],
   imports: [
     BrowserModule,
@@ -97,6 +100,7 @@ import { StoryEventRequestComponent } from './components/story-event-request/sto
       HeroVideoCamera,
       HeroVolumeUp,
       HeroBookOpen,
+      HeroDotsVertical,
     }),
   ],
   providers: [],

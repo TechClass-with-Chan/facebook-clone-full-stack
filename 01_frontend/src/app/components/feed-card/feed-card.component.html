@@ -1,3 +1,90 @@
 <div class="border-muted border-[1px] bg-white mt-4 rounded-lg p-6">
-  <p>feed-card works!</p>
+  <!-- User -->
+  <div class="flex flex-row h-14">
+    <img
+      class="h-14 w-14 rounded-full object-cover flex-none"
+      src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+      alt=""
+    />
+
+    <div class="ml-6 grow">
+      <div class="flex flex-row h-1/2">
+        <span class="font-medium text-xl">Elon Musk</span>
+        <ng-icon
+          class="text-medal self-center ml-2"
+          size="24"
+          strokeWidth="1"
+          name="hero-badge-check"
+        ></ng-icon>
+      </div>
+      <div class="h-1/2 leading-7 text-sm opacity-50">8:15 PM, yesterday</div>
+    </div>
+
+    <div>
+      <ng-icon
+        class="text-light hover:cursor-pointer hover:text-highlight"
+        size="38"
+        strokeWidth="2"
+        name="hero-dots-horizontal"
+      ></ng-icon>
+    </div>
+  </div>
+
+  <!-- Text -->
+  <div class="mt-7 text-sm">
+    Our Falcon’ 1st step successfully returned from its’ 9th mission.<br />
+    Gonna try it out next week one more time. Why not?
+  </div>
+
+  <!-- Picture -->
+  <div class="mt-5 grid grid-cols-7 gap-4">
+    <img
+      class="col-span-3 h-64 rounded-md object-cover"
+      src="https://techcrunch.com/wp-content/uploads/2020/12/STR_10.jpg?w=1390&crop=1"
+      alt=""
+    />
+    <img
+      class="col-span-2 h-64 rounded-md object-cover"
+      src="https://1734811051.rsc.cdn77.org/data/images/full/375838/spacex-falcon-9-rocket-and-crew-dragon-capsule-launches-from-cape-canaveral-sending-astronauts-to-the-international-space-station.jpg"
+      alt=""
+    />
+    <img
+      class="col-span-2 h-64 rounded-md object-cover"
+      src="https://content.fortune.com/wp-content/uploads/2016/09/478872958.jpg?resize=750,500"
+      alt=""
+    />
+  </div>
+
+  <!-- Actions -->
+  <div class="mt-9 flex flex-row justify-between">
+    <div class="flex flex-row gap-11">
+      <div
+        class="flex flex-row text-light hover:text-highlight hover:cursor-pointer"
+      >
+        <ng-icon size="38" strokeWidth="1" name="hero-thumb-up"></ng-icon>
+        <span class="font-medium text-xl ml-2 leading-8 self-center">25k</span>
+      </div>
+      <div
+        class="flex flex-row text-light hover:text-highlight hover:cursor-pointer"
+      >
+        <ng-icon size="38" strokeWidth="1" name="hero-annotation"></ng-icon>
+        <span class="font-medium text-xl ml-2 leading-8 self-center">2k</span>
+      </div>
+      <div
+        class="flex flex-row text-light hover:text-highlight hover:cursor-pointer"
+      >
+        <ng-icon size="38" strokeWidth="1" name="hero-share"></ng-icon>
+        <span class="font-medium text-xl ml-2 leading-8 self-center">542</span>
+      </div>
+    </div>
+
+    <div class="flex flex-row">
+      <ng-icon
+        class="text-light hover:text-highlight hover:cursor-pointer self-center"
+        size="38"
+        strokeWidth="1"
+        name="hero-star"
+      ></ng-icon>
+    </div>
+  </div>
 </div>

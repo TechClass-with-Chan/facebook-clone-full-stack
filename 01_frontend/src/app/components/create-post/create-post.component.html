@@ -1,5 +1,54 @@
 <div
-  class="border-muted border-[1px] h-20 shadow-small bg-white rounded-lg px-6 py-4"
+  class="border-muted border-[1px] h-20 shadow-small bg-white rounded-lg px-6 py-4 flex flex-row"
 >
-  <p>create-post works!</p>
+  <img
+    class="h-12 w-12 rounded-full object-cover flex-none"
+    src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Sergey_Brin_cropped.jpg"
+    alt=""
+  />
+
+  <input
+    class="mx-3 h-12 grow p-3 text-base focus:outline-none"
+    placeholder="What's on your mind?"
+    type="text"
+  />
+
+  <div class="flex flex-row justify-between gap-3 mr-6">
+    <ng-icon
+      class="text-light self-center hover:cursor-pointer hover:text-highlight"
+      size="30"
+      strokeWidth="1.5"
+      name="hero-photograph"
+    ></ng-icon>
+    <ng-icon
+      class="text-light self-center hover:cursor-pointer hover:text-highlight"
+      size="30"
+      strokeWidth="1.5"
+      name="hero-user"
+    ></ng-icon>
+    <ng-icon
+      class="text-light self-center hover:cursor-pointer hover:text-highlight"
+      size="30"
+      strokeWidth="1.5"
+      name="hero-emoji-happy"
+    ></ng-icon>
+  </div>
+
+  <div class="flex flex-row w-20 justify-center border-l-[1px] border-muted">
+    <ng-icon
+      class="text-highlight self-center hover:cursor-pointer"
+      size="30"
+      strokeWidth="1.5"
+      name="hero-camera"
+    ></ng-icon>
+  </div>
+
+  <div class="flex flex-row w-14 justify-end border-l-[1px] border-muted">
+    <ng-icon
+      class="text-highlight self-center hover:cursor-pointer"
+      size="30"
+      strokeWidth="1.5"
+      name="hero-video-camera"
+    ></ng-icon>
+  </div>
 </div>

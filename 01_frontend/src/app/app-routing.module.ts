@@ -7,7 +7,7 @@ import { ChatsComponent } from './pages/chats/chats.component';
 import { ProfileModule } from './pages/profile/profile.module';
 
 const appRoutes: Routes = [
-  { path: '', component: FeedsComponent },
+  { path: '', redirectTo: 'feeds', pathMatch: 'full' },
   { path: 'feeds', component: FeedsComponent },
   { path: 'friends', component: FriendsComponent },
   { path: 'chats', component: ChatsComponent },
@@ -17,7 +17,7 @@ const appRoutes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true }),
+    RouterModule.forRoot(appRoutes),
     ProfileModule,
   ],
   exports: [RouterModule],

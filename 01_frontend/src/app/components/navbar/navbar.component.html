@@ -2,9 +2,8 @@
   <ng-container *ngFor="let nav of navigations">
     <a
       [routerLink]="nav.url"
-      [ngClass]="{
-        'opacity-100 font-medium border-b-highlight border-b-2': nav.highlighted
-      }"
+      routerLinkActive="opacity-100 font-medium border-b-highlight border-b-2"
+      [routerLinkActiveOptions]="{ exact: true }"
       class="hover:border-b-highlight hover:border-b-2 h-12 block leading-10 opacity-50 hover:opacity-100"
       >{{ nav.text }}</a
     >

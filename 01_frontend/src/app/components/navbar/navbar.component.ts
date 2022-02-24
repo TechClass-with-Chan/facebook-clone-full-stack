@@ -11,46 +11,30 @@ export class NavbarComponent implements OnInit {
     {
       text: 'Posts',
       url: '/feeds',
-      highlighted: true,
     },
     {
       text: 'Photos',
-      url: '/',
-      highlighted: false,
+      url: '#',
     },
     {
       text: 'Video',
-      url: '/',
-      highlighted: false,
+      url: '#',
     },
     {
       text: 'Communities',
-      url: '/',
-      highlighted: false,
+      url: '#',
     },
     {
       text: 'Favourites',
-      url: '/',
-      highlighted: false,
+      url: '#',
     },
     {
       text: 'Recommendations',
-      url: '/',
-      highlighted: false,
+      url: '#',
     },
   ];
 
-  constructor(private router: Router) {
-    if (router.url !== '/') {
-      this.navigations.forEach((nav) => {
-        if (nav.url === router.url) {
-          nav.highlighted = true;
-        } else {
-          nav.highlighted = false;
-        }
-      });
-    }
-  }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 }
