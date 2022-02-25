@@ -1,0 +1,34 @@
+<div
+  class="border-muted shadow-small col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] bg-white hover:cursor-pointer gap-7 hover:shadow-large hover:bg-gray-50"
+>
+  <img
+    class="w-32 h-32 object-cover rounded-l-md flex-none"
+    [src]="friend.img"
+    alt=""
+  />
+
+  <div class="grow flex flex-col justify-center">
+    <div class="flex flex-row">
+      <span class="font-raleway font-bold text-xl">{{ friend.username }}</span>
+      <ng-icon
+        *ngIf="friend.verified"
+        class="text-medal self-center ml-3"
+        size="26"
+        strokeWidth="1"
+        name="hero-badge-check"
+      ></ng-icon>
+    </div>
+    <span class="text-base opacity-50 mt-1">{{
+      friend.company ? "Works at " + friend.company : friend.location
+    }}</span>
+  </div>
+
+  <div class="flex-none flex flex-row justify-start w-12">
+    <ng-icon
+      class="self-center text-light hover:text-highlight hover:cursor-pointer"
+      size="32"
+      strokeWidth="2"
+      name="hero-dots-vertical"
+    ></ng-icon>
+  </div>
+</div>

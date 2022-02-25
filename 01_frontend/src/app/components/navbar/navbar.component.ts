@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NavbarItem } from 'src/app/vo/navbar-item';
 
 @Component({
   selector: 'app-navbar',
@@ -6,32 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  navigations = [
-    {
-      text: 'Posts',
-      url: '/feeds',
-    },
-    {
-      text: 'Photos',
-      url: '',
-    },
-    {
-      text: 'Video',
-      url: '',
-    },
-    {
-      text: 'Communities',
-      url: '',
-    },
-    {
-      text: 'Favourites',
-      url: '',
-    },
-    {
-      text: 'Recommendations',
-      url: '',
-    },
-  ];
+  @Input() navbarItems!: Array<NavbarItem>;
 
   constructor() {}
 

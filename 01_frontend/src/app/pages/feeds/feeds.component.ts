@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Feed } from 'src/app/vo/feed';
+import { NavbarItem } from 'src/app/vo/navbar-item';
 
 @Component({
   selector: 'app-feeds',
@@ -23,6 +24,33 @@ export class FeedsComponent implements OnInit {
       comments: 2000,
       shares: 542,
       stared: true,
+    },
+  ];
+
+  navbarItems: Array<NavbarItem> = [
+    {
+      text: 'Posts',
+      url: '/feeds',
+    },
+    {
+      text: 'Photos',
+      url: '',
+    },
+    {
+      text: 'Video',
+      url: '',
+    },
+    {
+      text: 'Communities',
+      url: '',
+    },
+    {
+      text: 'Favourites',
+      url: '',
+    },
+    {
+      text: 'Recommendations',
+      url: '',
     },
   ];
 

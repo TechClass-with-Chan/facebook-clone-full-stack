@@ -71,6 +71,7 @@ import * as Sentry from '@sentry/angular';
 import { BrowserTracing } from '@sentry/tracing';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { Router } from '@angular/router';
+import { FriendCardComponent } from './components/friend-card/friend-card.component';
 
 Sentry.init({
   dsn: 'https://4e98ff16e7a5479881d274c36b45cf75@o1141172.ingest.sentry.io/6231285',
@@ -101,6 +102,7 @@ Sentry.init({
     FeedCardComponent,
     StoryEventRequestComponent,
     FriendRequestComponent,
+    FriendCardComponent,
   ],
   imports: [
     BrowserModule,

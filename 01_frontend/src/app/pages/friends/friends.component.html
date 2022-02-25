@@ -1,1 +1,9 @@
-<p>friends works!</p>
+<div>
+  <app-navbar [navbarItems]="navbarItems"></app-navbar>
+</div>
+
+<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 2xl:grid-cols-3">
+    <ng-container *ngFor="let friend of friends">
+        <app-friend-card [friend]="friend"></app-friend-card>
+    </ng-container>
+</div>
