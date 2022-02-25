@@ -1,4 +1,9 @@
-import { NgModule } from '@angular/core';
+import {
+  APP_INITIALIZER,
+  enableProdMode,
+  ErrorHandler,
+  NgModule,
+} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -49,14 +54,38 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
 import { FeedCardComponent } from './components/feed-card/feed-card.component';
 import { StoryEventRequestComponent } from './components/story-event-request/story-event-request.component';
 import { FriendRequestComponent } from './components/story-event-request/friend-request/friend-request.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
-import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { provideMessaging,getMessaging } from '@angular/fire/messaging';
-import { providePerformance,getPerformance } from '@angular/fire/performance';
-import { provideStorage,getStorage } from '@angular/fire/storage';
+import {
+  provideAnalytics,
+  getAnalytics,
+  ScreenTrackingService,
+  UserTrackingService,
+} from '@angular/fire/analytics';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { provideMessaging, getMessaging } from '@angular/fire/messaging';
+import { providePerformance, getPerformance } from '@angular/fire/performance';
+import { provideStorage, getStorage } from '@angular/fire/storage';
+import * as Sentry from '@sentry/angular';
+import { BrowserTracing } from '@sentry/tracing';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { Router } from '@angular/router';
+
+Sentry.init({
+  dsn: 'https://4e98ff16e7a5479881d274c36b45cf75@o1141172.ingest.sentry.io/6231285',
+  integrations: [
+    new BrowserTracing({
+      tracingOrigins: ['https://facebook-clone-full-stack.web.app'],
+      routingInstrumentation: Sentry.routingInstrumentation,
+    }),
+  ],
+
+  // Set tracesSampleRate to 1.0 to capture 100%
+  // of transactions for performance monitoring.
+  // We recommend adjusting this value in production
+  tracesSampleRate: 1.0,
+});
 
 @NgModule({
   declarations: [
@@ -119,8 +148,31 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     provideStorage(() => getStorage()),
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    ScreenTrackingService,
+    UserTrackingService,
+    {
+      provide: ErrorHandler,
+      useValue: Sentry.createErrorHandler({
+        showDialog: false,
+      }),
+    },
+    {
+      provide: Sentry.TraceService,
+      deps: [Router],
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: () => () => {},
+      deps: [Sentry.TraceService],
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+enableProdMode();
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .then((success) => console.log(`Bootstrap success`))
+  .catch((err) => console.log(err));
