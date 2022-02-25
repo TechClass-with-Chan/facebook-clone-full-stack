@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -14,27 +13,27 @@ export class NavbarComponent implements OnInit {
     },
     {
       text: 'Photos',
-      url: '#',
+      url: '',
     },
     {
       text: 'Video',
-      url: '#',
+      url: '',
     },
     {
       text: 'Communities',
-      url: '#',
+      url: '',
     },
     {
       text: 'Favourites',
-      url: '#',
+      url: '',
     },
     {
       text: 'Recommendations',
-      url: '#',
+      url: '',
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }
