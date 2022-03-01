@@ -1,0 +1,43 @@
+<details
+  class="h-fit w-full rounded-md border-[1px] border-muted bg-white p-7 shadow-small"
+  [ngClass]="{
+    'hover:cursor-pointer': infoItem.detailText || infoItem.detailImg
+  }"
+>
+  <summary class="flex h-full w-full flex-row gap-7">
+    <img
+      *ngIf="infoItem.img"
+      class="h-12 w-12 self-center rounded-full object-cover"
+      [src]="infoItem.img"
+      alt=""
+    />
+    <ng-icon
+      *ngIf="!infoItem.img"
+      class="self-center text-light"
+      size="56"
+      strokeWidth="1"
+      [name]="infoItem.icon"
+    ></ng-icon>
+
+    <div class="flex grow flex-col justify-center">
+      <span class="text-base">{{ infoItem.item }}</span>
+      <span class="text-base text-highlight">{{ infoItem.info }}</span>
+    </div>
+
+    <div
+      *ngIf="infoItem.detailText || infoItem.detailImg"
+      class="flex flex-col justify-center self-center"
+    >
+      <ng-icon
+        class="text-highlight"
+        size="18"
+        name="hero-chevron-down"
+      ></ng-icon>
+    </div>
+  </summary>
+  <p class="mt-2">
+    <img [src]="infoItem.detailImg" alt="" />
+    <span class="mt-5 block text-sm">{{ infoItem.detailText }}</span>
+    <a class="mt-5 block text-base text-highlight" href="#">Read more</a>
+  </p>
+</details>

@@ -43,12 +43,15 @@ import {
   HeroBookOpen,
   HeroDotsVertical,
   HeroPlay,
+  HeroChevronDown,
+  HeroAcademicCap,
 } from '@ng-icons/heroicons';
 import { FriendRequestComponent } from './story-event-request/friend-request/friend-request.component';
 import { RouterModule } from '@angular/router';
 import { RelationshipCountComponent } from './relationship-count/relationship-count.component';
 import { AboutFriendsSongsComponent } from './about-friends-songs/about-friends-songs.component';
 import { FavoriteSongComponent } from './favorite-song/favorite-song.component';
+import { ProfileInfoCardComponent } from './profile-info-card/profile-info-card.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +67,7 @@ import { FavoriteSongComponent } from './favorite-song/favorite-song.component';
     RelationshipCountComponent,
     AboutFriendsSongsComponent,
     FavoriteSongComponent,
+    ProfileInfoCardComponent,
   ],
   imports: [
     CommonModule,
@@ -102,6 +106,8 @@ import { FavoriteSongComponent } from './favorite-song/favorite-song.component';
       HeroBookOpen,
       HeroDotsVertical,
       HeroPlay,
+      HeroChevronDown,
+      HeroAcademicCap,
     }),
   ],
   exports: [
@@ -117,6 +123,7 @@ import { FavoriteSongComponent } from './favorite-song/favorite-song.component';
     RelationshipCountComponent,
     AboutFriendsSongsComponent,
     FavoriteSongComponent,
+    ProfileInfoCardComponent,
     NgIconsModule,
   ],
 })

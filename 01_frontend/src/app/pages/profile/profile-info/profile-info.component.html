@@ -1,1 +1,30 @@
-<p>profile-info works!</p>
+<!-- Category -->
+<div class="flex h-10 flex-row gap-4">
+  <div
+    class="rounded-full bg-selected px-5 text-center text-xl leading-10 text-white hover:cursor-pointer hover:bg-selected hover:text-white"
+  >
+    Overview
+  </div>
+  <div
+    class="rounded-full px-5 text-center text-xl leading-10 text-highlight hover:cursor-pointer hover:bg-selected hover:text-white"
+  >
+    Work & Education
+  </div>
+  <div
+    class="rounded-full px-5 text-center text-xl leading-10 text-highlight hover:cursor-pointer hover:bg-selected hover:text-white"
+  >
+    Details about Elon
+  </div>
+  <div
+    class="rounded-full px-5 text-center text-xl leading-10 text-highlight hover:cursor-pointer hover:bg-selected hover:text-white"
+  >
+    Life events
+  </div>
+</div>
+
+<!-- Details -->
+<div class="mt-9 grid grid-cols-1 gap-6 md:grid-cols-2 2xl:grid-cols-3">
+  <ng-container *ngFor="let infoItem of infoItems">
+    <app-profile-info-card [infoItem]="infoItem"></app-profile-info-card>
+  </ng-container>
+</div>
