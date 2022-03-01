@@ -1,4 +1,7 @@
-<div class="flex flex-row bg-[#F2F2F5] p-0 font-montserrat text-primary">
+<div
+  *ngIf="!test"
+  class="flex flex-row bg-[#F2F2F5] p-0 font-montserrat text-primary"
+>
   <!-- Sidemenu -->
   <div class="flex flex-none flex-row justify-center px-16 font-raleway">
     <app-sidemenu></app-sidemenu>
@@ -10,3 +13,5 @@
   <!-- Music Player -->
   <app-music-player></app-music-player>
 </div>
+
+<router-outlet *ngIf="test"></router-outlet>

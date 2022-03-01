@@ -1,0 +1,21 @@
+<div class="h-screen bg-[#F2F2F5] p-10 font-montserrat text-primary">
+  <div
+    class="bbr fixed bottom-0 left-0 flex h-20 w-full flex-row justify-center text-center"
+  >
+    <span class="self-center text-3xl md:hidden">{{
+      "sm (640px): " + innerWidth + "px"
+    }}</span>
+    <span class="hidden self-center text-3xl md:block lg:hidden">
+      {{ "md (768px): " + innerWidth + "px" }}</span
+    >
+    <span class="hidden self-center text-3xl lg:block xl:hidden">
+      {{ "lg (1024px): " + innerWidth + "px" }}</span
+    >
+    <span class="hidden self-center text-3xl xl:block 2xl:hidden">
+      {{ "xl (1280px): " + innerWidth + "px" }}</span
+    >
+    <span class="hidden self-center text-3xl 2xl:block">
+      {{ "2xl (1536px): " + innerWidth + "px" }}</span
+    >
+  </div>
+</div>
