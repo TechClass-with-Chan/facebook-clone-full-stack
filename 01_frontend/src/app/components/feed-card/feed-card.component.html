@@ -1,23 +1,23 @@
-<div class="border-muted border-[1px] bg-white mt-4 rounded-lg p-6">
+<div class="mt-4 rounded-lg border-[1px] border-muted bg-white p-6">
   <!-- User -->
-  <div class="flex flex-row h-14">
+  <div class="flex h-14 flex-row">
     <img
-      class="h-14 w-14 rounded-full object-cover flex-none"
+      class="h-14 w-14 flex-none rounded-full object-cover"
       [src]="feed.img"
       alt=""
     />
 
     <div class="ml-6 grow">
-      <div class="flex flex-row h-1/2">
-        <span class="font-medium text-xl">{{ feed.username }}</span>
+      <div class="flex h-1/2 flex-row">
+        <span class="text-xl font-medium">{{ feed.username }}</span>
         <ng-icon
-          class="text-medal self-center ml-2"
+          class="ml-2 self-center text-medal"
           size="24"
           strokeWidth="1"
           name="hero-badge-check"
         ></ng-icon>
       </div>
-      <div class="h-1/2 leading-7 text-sm opacity-50">
+      <div class="h-1/2 text-sm leading-7 opacity-50">
         {{ feed.postTime | date: "h:mm a, MMMM d" }}
       </div>
     </div>
@@ -33,12 +33,12 @@
   </div>
 
   <!-- Text -->
-  <div class="mt-7 text-sm whitespace-pre-line">
+  <div class="mt-7 whitespace-pre-line text-sm">
     {{ feed.post }}
   </div>
 
   <!-- Picture -->
-  <div class="mt-5 flex flex-row gap-4 overflow-x-scroll scrollbar">
+  <div class="scrollbar mt-5 flex flex-row gap-4 overflow-x-scroll">
     <ng-container *ngFor="let picture of feed.pictures">
       <img class="h-64 rounded-md object-cover" [src]="picture" alt="" />
     </ng-container>
@@ -48,26 +48,26 @@
   <div class="mt-9 flex flex-row justify-between">
     <div class="flex flex-row gap-11">
       <div
-        class="flex flex-row text-light hover:text-highlight hover:cursor-pointer"
+        class="flex flex-row text-light hover:cursor-pointer hover:text-highlight"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-thumb-up"></ng-icon>
-        <span class="font-medium text-xl ml-2 leading-8 self-center">{{
+        <span class="ml-2 self-center text-xl font-medium leading-8">{{
           feed.thumbUps | number
         }}</span>
       </div>
       <div
-        class="flex flex-row text-light hover:text-highlight hover:cursor-pointer"
+        class="flex flex-row text-light hover:cursor-pointer hover:text-highlight"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-annotation"></ng-icon>
-        <span class="font-medium text-xl ml-2 leading-8 self-center">{{
+        <span class="ml-2 self-center text-xl font-medium leading-8">{{
           feed.comments | number
         }}</span>
       </div>
       <div
-        class="flex flex-row text-light hover:text-highlight hover:cursor-pointer"
+        class="flex flex-row text-light hover:cursor-pointer hover:text-highlight"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-share"></ng-icon>
-        <span class="font-medium text-xl ml-2 leading-8 self-center">{{
+        <span class="ml-2 self-center text-xl font-medium leading-8">{{
           feed.shares | number
         }}</span>
       </div>
@@ -76,7 +76,7 @@
     <div class="flex flex-row">
       <ng-icon
         [ngClass]="feed.stared ? 'text-highlight' : 'text-light'"
-        class="text-light hover:text-highlight hover:cursor-pointer self-center"
+        class="self-center text-light hover:cursor-pointer hover:text-highlight"
         size="38"
         strokeWidth="1"
         name="hero-star"

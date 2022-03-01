@@ -1,31 +1,31 @@
 <div
-  class="border-muted shadow-small col-span-1 flex h-32 w-full flex-row rounded-md border-[1px] bg-white hover:cursor-pointer gap-7 hover:shadow-large hover:bg-gray-50"
+  class="col-span-1 flex h-32 w-full flex-row gap-7 rounded-md border-[1px] border-muted bg-white shadow-small hover:cursor-pointer hover:bg-gray-50 hover:shadow-large"
 >
   <img
-    class="w-32 h-32 object-cover rounded-l-md flex-none"
+    class="h-32 w-32 flex-none rounded-l-md object-cover"
     [src]="friend.img"
     alt=""
   />
 
-  <div class="grow flex flex-col justify-center">
+  <div class="flex grow flex-col justify-center">
     <div class="flex flex-row">
-      <span class="font-raleway font-bold text-xl">{{ friend.username }}</span>
+      <span class="font-raleway text-xl font-bold">{{ friend.username }}</span>
       <ng-icon
         *ngIf="friend.verified"
-        class="text-medal self-center ml-3"
+        class="ml-3 self-center text-medal"
         size="26"
         strokeWidth="1"
         name="hero-badge-check"
       ></ng-icon>
     </div>
-    <span class="text-base opacity-50 mt-1">{{
+    <span class="mt-1 text-base opacity-50">{{
       friend.company ? "Works at " + friend.company : friend.location
     }}</span>
   </div>
 
-  <div class="flex-none flex flex-row justify-start w-12">
+  <div class="flex w-12 flex-none flex-row justify-start">
     <ng-icon
-      class="self-center text-light hover:text-highlight hover:cursor-pointer"
+      class="self-center text-light hover:cursor-pointer hover:text-highlight"
       size="32"
       strokeWidth="2"
       name="hero-dots-vertical"

@@ -22,7 +22,7 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-light rounded-lg border-2 border-solid border-gray-100;
+    @apply rounded-lg border-2 border-solid border-gray-100 bg-light;
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
