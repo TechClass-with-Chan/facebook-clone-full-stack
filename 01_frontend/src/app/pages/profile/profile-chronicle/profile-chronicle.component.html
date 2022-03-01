@@ -1,1 +1,69 @@
-<p>profile-chronicle works!</p>
+<!-- Photos -->
+<div class="scrollbar flex h-44 snap-x flex-row gap-6 overflow-x-scroll">
+  <img
+    class="h-full snap-center rounded-xl"
+    src="https://image.cnbcfm.com/api/v1/image/106926992-1628885077267-elon.jpg"
+    alt=""
+  />
+  <img
+    class="h-full snap-center rounded-xl"
+    src="https://cdn.vox-cdn.com/thumbor/8O4iDfhaokZEQ_QpSx-iUS-X8Is=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66782388/elon_musk_tesla_3036.0.jpg"
+    alt=""
+  />
+  <img
+    class="h-full snap-center rounded-xl"
+    src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTc5OTk2ODUyMTMxNzM0ODcy/gettyimages-1229892983-square.jpg"
+    alt=""
+  />
+  <img
+    class="h-full snap-center rounded-xl"
+    src="https://content.fortune.com/wp-content/uploads/2015/05/rtx1b282.jpg"
+    alt=""
+  />
+  <img
+    class="h-full snap-center rounded-xl"
+    src="https://imageio.forbes.com/specials-images/imageserve/61893b3e19b77d3a4ab3fa1f/Elon-Musk-Awarded-With-Axel-Springer-Award-In-Berlin/960x0.jpg"
+    alt=""
+  />
+</div>
+
+<div class="mt-10 flex flex-row">
+  <div>
+    <!-- Create a post -->
+    <app-create-post></app-create-post>
+
+    <!-- Publications -->
+    <div class="mt-7 mb-1 pb-28">
+      <!-- Title and Search -->
+      <div class="flex flex-row justify-between">
+        <span class="text-2xl font-semibold">Publications</span>
+        <ng-icon
+          class="text-light hover:cursor-pointer hover:text-highlight"
+          size="30"
+          strokeWidth="2"
+          name="hero-search"
+        ></ng-icon>
+      </div>
+
+      <div class="mt-7 flex flex-col gap-6">
+        <ng-container *ngFor="let publication of publications">
+          <app-feed-card [feed]="publication"></app-feed-card>
+          <app-feed-card [feed]="publication"></app-feed-card>
+          <app-feed-card [feed]="publication"></app-feed-card>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <!-- Numbers, Abount -->
+  <div class="ml-6 flex flex-col">
+    <!-- Numbers -->
+    <div>
+      <app-relationship-count></app-relationship-count>
+    </div>
+
+    <div class="sticky top-6 mt-7 h-min">
+      <app-about-friends-songs></app-about-friends-songs>
+    </div>
+  </div>
+</div>

@@ -42,9 +42,13 @@ import {
   HeroVolumeUp,
   HeroBookOpen,
   HeroDotsVertical,
+  HeroPlay,
 } from '@ng-icons/heroicons';
 import { FriendRequestComponent } from './story-event-request/friend-request/friend-request.component';
 import { RouterModule } from '@angular/router';
+import { RelationshipCountComponent } from './relationship-count/relationship-count.component';
+import { AboutFriendsSongsComponent } from './about-friends-songs/about-friends-songs.component';
+import { FavoriteSongComponent } from './favorite-song/favorite-song.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +61,9 @@ import { RouterModule } from '@angular/router';
     SidemenuItemComponent,
     StoryEventRequestComponent,
     FriendRequestComponent,
+    RelationshipCountComponent,
+    AboutFriendsSongsComponent,
+    FavoriteSongComponent,
   ],
   imports: [
     CommonModule,
@@ -94,6 +101,7 @@ import { RouterModule } from '@angular/router';
       HeroVolumeUp,
       HeroBookOpen,
       HeroDotsVertical,
+      HeroPlay,
     }),
   ],
   exports: [
@@ -106,6 +114,10 @@ import { RouterModule } from '@angular/router';
     SidemenuItemComponent,
     StoryEventRequestComponent,
     FriendRequestComponent,
+    RelationshipCountComponent,
+    AboutFriendsSongsComponent,
+    FavoriteSongComponent,
+    NgIconsModule,
   ],
 })
 export class SharedComponentsModule {}

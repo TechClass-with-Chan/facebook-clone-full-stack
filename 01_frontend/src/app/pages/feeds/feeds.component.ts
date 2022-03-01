@@ -45,7 +45,7 @@ export class FeedsComponent implements OnInit {
       url: '',
     },
     {
-      text: 'Favourites',
+      text: 'Favorites',
       url: '',
     },
     {
