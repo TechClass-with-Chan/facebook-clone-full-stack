@@ -1,1 +1,143 @@
-<p>chats works!</p>
+<div class="flex h-screen flex-row bg-white">
+  <!-- Messages -->
+  <div class="flex h-full grow flex-col">
+    <!-- Avatar and Actions -->
+    <div
+      class="flex h-20 flex-none flex-row justify-between border-b border-muted px-6 py-4"
+    >
+      <div class="flex flex-row">
+        <img
+          class="h-12 w-12 rounded-full object-cover"
+          src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+          alt=""
+        />
+        <span class="ml-7 self-center text-xl font-semibold">Elon Musk</span>
+        <ng-icon
+          class="ml-2 self-center text-medal"
+          size="20"
+          strokeWidth="1"
+          name="hero-badge-check"
+        ></ng-icon>
+      </div>
+      <div class="flex flex-row gap-4">
+        <ng-icon
+          class="self-center text-light hover:cursor-pointer hover:text-highlight"
+          size="32"
+          strokeWidth="1"
+          name="hero-search"
+        ></ng-icon>
+        <ng-icon
+          class="self-center text-light hover:cursor-pointer hover:text-highlight"
+          size="32"
+          strokeWidth="1"
+          name="hero-paper-clip"
+        ></ng-icon>
+        <ng-icon
+          class="self-center text-light hover:cursor-pointer hover:text-highlight"
+          size="32"
+          strokeWidth="1"
+          name="hero-dots-horizontal"
+        ></ng-icon>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="scrollbar grow overflow-y-scroll border-b border-muted">
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- Write a message -->
+    <div class="flex h-20 flex-none flex-row px-6 py-5">
+      <ng-icon
+        class="self-center text-light hover:cursor-pointer hover:text-highlight"
+        size="32"
+        strokeWidth="1"
+        name="hero-paper-clip"
+      ></ng-icon>
+      <input
+        class="ml-8 grow text-lg placeholder:text-lg placeholder:opacity-50 focus:outline-none"
+        type="text"
+        placeholder="Write a message to Elon"
+      />
+      <div class="mr-3 flex flex-row gap-3">
+        <ng-icon
+          class="self-center text-light hover:cursor-pointer hover:text-highlight"
+          size="32"
+          strokeWidth="1"
+          name="hero-photograph"
+        ></ng-icon>
+        <ng-icon
+          class="self-center text-light hover:cursor-pointer hover:text-highlight"
+          size="32"
+          strokeWidth="1"
+          name="hero-emoji-happy"
+        ></ng-icon>
+      </div>
+      <div class="flex flex-row gap-3 border-l border-light pl-3">
+        <ng-icon
+          class="self-center text-light hover:cursor-pointer hover:text-highlight"
+          size="32"
+          strokeWidth="1"
+          name="hero-video-camera"
+        ></ng-icon>
+        <ng-icon
+          class="self-center text-light hover:cursor-pointer hover:text-highlight"
+          size="32"
+          strokeWidth="1"
+          name="hero-microphone"
+        ></ng-icon>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div class="flex flex-none flex-col">
+    <!-- Search all messages -->
+    <div class="flex h-20 flex-row gap-3 border-b border-l border-muted px-6">
+      <ng-icon
+        class="flex-none self-center text-light hover:cursor-pointer hover:text-highlight"
+        size="30"
+        strokeWidth="2"
+        name="hero-search"
+      ></ng-icon>
+      <input
+        class="h-7 grow self-center px-3 placeholder:text-base placeholder:opacity-50 focus:outline-none"
+        type="text"
+        placeholder="Search in all messages"
+      />
+      <ng-icon
+        class="self-center text-highlight"
+        size="32"
+        name="hero-plus"
+      ></ng-icon>
+    </div>
+
+    <!-- Category of contacts -->
+    <div class="flex h-14 flex-row gap-11 border-l border-muted px-6">
+      <a
+        class="h-14 whitespace-nowrap border-b-2 border-highlight pt-2 text-lg font-medium leading-10 hover:cursor-pointer hover:border-b-2 hover:border-highlight"
+      >
+        All
+      </a>
+      <a
+        class="h-14 whitespace-nowrap pt-2 text-center text-lg font-medium leading-10 hover:cursor-pointer hover:border-b-2 hover:border-highlight"
+      >
+        Unread
+      </a>
+      <a
+        class="h-14 whitespace-nowrap pt-2 text-center text-lg font-medium leading-10 hover:cursor-pointer hover:border-b-2 hover:border-highlight"
+      >
+        Important
+      </a>
+    </div>
+
+    <!-- Contacts -->
+    <div
+      class="scrollbar grow overflow-y-scroll border-t border-l border-muted"
+    >
+      <ng-container *ngFor="let contact of contacts">
+        <app-chat-contact [contact]="contact"></app-chat-contact>
+      </ng-container>
+    </div>
+  </div>
+</div>

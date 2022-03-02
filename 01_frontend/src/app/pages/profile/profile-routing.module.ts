@@ -6,7 +6,7 @@ import { ProfileInfoComponent } from './profile-info/profile-info.component';
 import { ProfilePhotosComponent } from './profile-photos/profile-photos.component';
 import { ProfileComponent } from './profile.component';
 
-const appRoutes: Routes = [
+const profileRoutes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
@@ -20,7 +20,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, RouterModule.forChild(appRoutes)],
+  imports: [CommonModule, RouterModule.forChild(profileRoutes)],
   exports: [RouterModule],
 })
 export class ProfileRoutingModule {}

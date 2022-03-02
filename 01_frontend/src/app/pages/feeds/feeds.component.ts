@@ -34,7 +34,7 @@ export class FeedsComponent implements OnInit {
     },
     {
       text: 'Photos',
-      url: '',
+      url: '/profile/photos',
     },
     {
       text: 'Video',

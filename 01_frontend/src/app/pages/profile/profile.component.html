@@ -1,58 +1,61 @@
-<!-- Profile Summary -->
-<div class="flex flex-row">
-  <!-- Avatar -->
-  <img
-    class="h-44 w-44 flex-none self-center rounded-full object-cover"
-    src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
-    alt=""
-  />
+<div class="bg-[#F6F6F9] p-10">
+  <!-- Profile Summary -->
+  <div class="flex flex-row">
+    <!-- Avatar -->
+    <img
+      class="h-44 w-44 flex-none self-center rounded-full object-cover"
+      src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+      alt=""
+    />
 
-  <!-- Name and Post -->
-  <div class="grow pl-12">
-    <div class="flex flex-row">
-      <span class="text-3xl font-bold">Elon Musk</span>
-      <ng-icon
-        class="ml-4 self-center text-medal"
-        size="30"
-        strokeWidth="1"
-        name="hero-badge-check"
-      ></ng-icon>
+    <!-- Name and Post -->
+    <div class="grow pl-12">
+      <div class="flex flex-row">
+        <span class="text-3xl font-bold">Elon Musk</span>
+        <ng-icon
+          class="ml-4 self-center text-medal"
+          size="30"
+          strokeWidth="1"
+          name="hero-badge-check"
+        ></ng-icon>
+      </div>
+      <p class="mt-5 text-base opacity-60">
+        Btw, SpaceX is no longer planning to upgrade Falcon 9 second stage for
+        reusability. Accelerating BFR instead. New design is very exciting!
+        Delightfully counter-intuitive.
+      </p>
     </div>
-    <p class="mt-5 text-base opacity-60">
-      Btw, SpaceX is no longer planning to upgrade Falcon 9 second stage for
-      reusability. Accelerating BFR instead. New design is very exciting!
-      Delightfully counter-intuitive.
-    </p>
+
+    <!-- Actions -->
+    <div class="ml-24 flex flex-none flex-row gap-8">
+      <a
+        routerLink="/chats/elonmusk"
+        class="flex h-20 w-20 flex-row justify-center self-center rounded-full bg-highlight shadow-large hover:cursor-pointer hover:shadow-button"
+      >
+        <ng-icon
+          class="self-center text-white"
+          size="42"
+          strokeWidth="1"
+          name="hero-annotation"
+        ></ng-icon>
+      </a>
+      <div class="flex flex-row justify-center hover:cursor-pointer">
+        <ng-icon
+          class="self-center text-highlight"
+          size="42"
+          strokeWidth="2"
+          name="hero-dots-vertical"
+        ></ng-icon>
+      </div>
+    </div>
   </div>
 
-  <!-- Actions -->
-  <div class="ml-24 flex flex-none flex-row gap-8">
-    <div
-      class="flex h-20 w-20 flex-row justify-center self-center rounded-full bg-highlight shadow-large hover:cursor-pointer hover:shadow-button"
-    >
-      <ng-icon
-        class="self-center text-white"
-        size="42"
-        strokeWidth="1"
-        name="hero-annotation"
-      ></ng-icon>
-    </div>
-    <div class="flex flex-row justify-center hover:cursor-pointer">
-      <ng-icon
-        class="self-center text-highlight"
-        size="42"
-        strokeWidth="2"
-        name="hero-dots-vertical"
-      ></ng-icon>
-    </div>
+  <!-- Navigator -->
+  <div class="mb-10 flex w-full flex-row">
+    <div class="w-56 border-b-2 border-muted"></div>
+    <app-navbar [navbarItems]="navbarItems"></app-navbar>
+    <div class="grow border-b-2 border-muted"></div>
   </div>
-</div>
 
-<!-- Navigator -->
-<div class="mb-10 flex w-full flex-row">
-  <div class="w-56 border-b-2 border-muted"></div>
-  <app-navbar [navbarItems]="navbarItems"></app-navbar>
-  <div class="grow border-b-2 border-muted"></div>
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>

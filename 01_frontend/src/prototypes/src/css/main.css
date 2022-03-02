@@ -4,10 +4,10 @@
 
 @layer components {
   .bb {
-    @apply border-[1px] border-black;
+    @apply border border-black;
   }
   .bbr {
-    @apply border-[1px] border-red-500;
+    @apply border border-red-500;
   }
 }
 

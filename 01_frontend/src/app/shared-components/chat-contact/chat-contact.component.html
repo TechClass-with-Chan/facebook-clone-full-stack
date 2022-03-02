@@ -1,0 +1,49 @@
+<a
+  [routerLink]="contact.link"
+  routerLinkActive="bg-selected"
+  class="flex flex-row gap-6 px-6 py-5 hover:cursor-pointer hover:bg-selected/90 hover:text-white"
+>
+  <img class="h-12 w-12 rounded-full object-cover" [src]="contact.img" alt="" />
+
+  <div class="max-w-xs grow">
+    <div class="flex flex-row">
+      <span
+        routerLinkActive="text-white"
+        class="text-center text-xl font-semibold"
+        >{{ contact.username }}</span
+      >
+      <div *ngIf="contact.verified" class="ml-2 flex flex-row">
+        <ng-icon
+          class="self-center text-medal"
+          size="24"
+          strokeWidth="1"
+          name="hero-badge-check"
+        ></ng-icon>
+      </div>
+    </div>
+    <p routerLinkActive="text-white" class="text-sm">
+      {{ contact.latestMessage }}
+    </p>
+  </div>
+
+  <div class="flex flex-col justify-center gap-4">
+    <span
+      routerLinkActive="text-white"
+      class="self-center text-sm opacity-50"
+      >{{ contact.latestMessageTime | date: "HH:mm" }}</span
+    >
+    <div
+      *ngIf="contact.unreadMessages > 0"
+      class="h-6 w-6 self-center rounded-full bg-selected text-center text-sm font-medium leading-6 text-white"
+    >
+      {{ contact.unreadMessages }}
+    </div>
+
+    <ng-icon
+      *ngIf="contact.unreadMessages === 0"
+      class="self-center text-light"
+      size="20"
+      name="hero-check"
+    ></ng-icon>
+  </div>
+</a>

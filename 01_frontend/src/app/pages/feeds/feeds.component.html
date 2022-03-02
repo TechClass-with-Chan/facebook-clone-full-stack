@@ -1,25 +1,27 @@
-<!-- Navigator -->
-<div>
-  <app-navbar [navbarItems]="navbarItems"></app-navbar>
-</div>
-
-<div class="mt-8 flex flex-row">
-  <div class="grow">
-    <!-- Create a post -->
-    <app-create-post></app-create-post>
-
-    <!-- Feeds -->
-    <div class="mt-6 flex flex-col gap-6">
-      <ng-container *ngFor="let feed of feeds">
-        <app-feed-card [feed]="feed"></app-feed-card>
-        <app-feed-card [feed]="feed"></app-feed-card>
-        <app-feed-card [feed]="feed"></app-feed-card>
-      </ng-container>
-    </div>
+<div class="bg-[#F6F6F9] p-10">
+  <!-- Navigator -->
+  <div>
+    <app-navbar [navbarItems]="navbarItems"></app-navbar>
   </div>
 
-  <!-- Stories, Events, Requests -->
-  <div class="sticky top-6 ml-6 h-min flex-none">
-    <app-story-event-request></app-story-event-request>
+  <div class="mt-8 flex flex-row">
+    <div class="grow">
+      <!-- Create a post -->
+      <app-create-post></app-create-post>
+
+      <!-- Feeds -->
+      <div class="mt-6 flex flex-col gap-6">
+        <ng-container *ngFor="let feed of feeds">
+          <app-feed-card [feed]="feed"></app-feed-card>
+          <app-feed-card [feed]="feed"></app-feed-card>
+          <app-feed-card [feed]="feed"></app-feed-card>
+        </ng-container>
+      </div>
+    </div>
+
+    <!-- Stories, Events, Requests -->
+    <div class="sticky top-6 ml-6 h-min flex-none">
+      <app-story-event-request></app-story-event-request>
+    </div>
   </div>
 </div>

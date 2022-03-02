@@ -54,6 +54,7 @@ import { FavoriteSongComponent } from './favorite-song/favorite-song.component';
 import { ProfileInfoCardComponent } from './profile-info-card/profile-info-card.component';
 import { PhotosInAYearComponent } from './photos-in-a-year/photos-in-a-year.component';
 import { PhotoPostComponent } from './photo-post/photo-post.component';
+import { ChatContactComponent } from './chat-contact/chat-contact.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { PhotoPostComponent } from './photo-post/photo-post.component';
     ProfileInfoCardComponent,
     PhotosInAYearComponent,
     PhotoPostComponent,
+    ChatContactComponent,
   ],
   imports: [
     CommonModule,
@@ -130,6 +132,7 @@ import { PhotoPostComponent } from './photo-post/photo-post.component';
     ProfileInfoCardComponent,
     PhotosInAYearComponent,
     PhotoPostComponent,
+    ChatContactComponent,
     NgIconsModule,
   ],
 })

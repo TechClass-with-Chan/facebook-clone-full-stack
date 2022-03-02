@@ -2,34 +2,31 @@ import {
   APP_INITIALIZER,
   enableProdMode,
   ErrorHandler,
-  NgModule,
+  NgModule
 } from '@angular/core';
+import {
+  getAnalytics, provideAnalytics, ScreenTrackingService,
+  UserTrackingService
+} from '@angular/fire/analytics';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { getMessaging, provideMessaging } from '@angular/fire/messaging';
+import { getPerformance, providePerformance } from '@angular/fire/performance';
+import { getStorage, provideStorage } from '@angular/fire/storage';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { Router } from '@angular/router';
+import * as Sentry from '@sentry/angular';
+import { BrowserTracing } from '@sentry/tracing';
+import { environment } from '../environments/environment';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeedsComponent } from './pages/feeds/feeds.component';
 import { FriendsComponent } from './pages/friends/friends.component';
-import { ChatsComponent } from './pages/chats/chats.component';
-import { AppRoutingModule } from './app-routing.module';
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import {
-  provideAnalytics,
-  getAnalytics,
-  ScreenTrackingService,
-  UserTrackingService,
-} from '@angular/fire/analytics';
-import { provideAuth, getAuth } from '@angular/fire/auth';
-import { provideDatabase, getDatabase } from '@angular/fire/database';
-import { provideMessaging, getMessaging } from '@angular/fire/messaging';
-import { providePerformance, getPerformance } from '@angular/fire/performance';
-import { provideStorage, getStorage } from '@angular/fire/storage';
-import * as Sentry from '@sentry/angular';
-import { BrowserTracing } from '@sentry/tracing';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { Router } from '@angular/router';
-import { TestComponent } from './test/test.component';
 import { SharedComponentsModule } from './shared-components/shared-components.module';
+import { TestComponent } from './test/test.component';
+
 
 Sentry.init({
   dsn: 'https://4e98ff16e7a5479881d274c36b45cf75@o1141172.ingest.sentry.io/6231285',
@@ -51,7 +48,6 @@ Sentry.init({
     AppComponent,
     FeedsComponent,
     FriendsComponent,
-    ChatsComponent,
     TestComponent,
   ],
   imports: [
