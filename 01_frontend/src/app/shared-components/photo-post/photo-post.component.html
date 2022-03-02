@@ -1,0 +1,48 @@
+<div class="relative">
+  <img
+    class="break-inside-avoid rounded-md object-cover"
+    [src]="photoPost.img"
+    alt=""
+  />
+
+  <div
+    class="opacity absolute inset-0 flex flex-col justify-between rounded-md p-7 opacity-0 hover:cursor-pointer hover:bg-selected hover:bg-opacity-50 hover:opacity-100"
+  >
+    <!-- Action -->
+    <div class="flex flex-row gap-5">
+      <div class="flex flex-row gap-2">
+        <ng-icon
+          class="opacity-50"
+          size="26"
+          strokeWidth="1"
+          name="hero-thumb-up"
+        ></ng-icon>
+        <span class="self-center text-sm font-semibold opacity-50">{{
+          photoPost.likes | number
+        }}</span>
+      </div>
+
+      <div class="flex flex-row gap-2">
+        <ng-icon
+          class="opacity-50"
+          size="26"
+          strokeWidth="1"
+          name="hero-annotation"
+        ></ng-icon>
+        <span class="self-center text-sm font-semibold opacity-50">{{
+          photoPost.comments | number
+        }}</span>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <div class="text-base text-white opacity-60">
+        {{ photoPost.postTime | date: "h:mm a, MMMM d" }}
+      </div>
+      <p class="max-h-14 overflow-hidden text-xl font-medium text-white">
+        {{ photoPost.summary }}
+      </p>
+    </div>
+  </div>
+</div>

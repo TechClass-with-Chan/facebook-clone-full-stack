@@ -52,6 +52,8 @@ import { RelationshipCountComponent } from './relationship-count/relationship-co
 import { AboutFriendsSongsComponent } from './about-friends-songs/about-friends-songs.component';
 import { FavoriteSongComponent } from './favorite-song/favorite-song.component';
 import { ProfileInfoCardComponent } from './profile-info-card/profile-info-card.component';
+import { PhotosInAYearComponent } from './photos-in-a-year/photos-in-a-year.component';
+import { PhotoPostComponent } from './photo-post/photo-post.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import { ProfileInfoCardComponent } from './profile-info-card/profile-info-card.
     AboutFriendsSongsComponent,
     FavoriteSongComponent,
     ProfileInfoCardComponent,
+    PhotosInAYearComponent,
+    PhotoPostComponent,
   ],
   imports: [
     CommonModule,
@@ -124,6 +128,8 @@ import { ProfileInfoCardComponent } from './profile-info-card/profile-info-card.
     AboutFriendsSongsComponent,
     FavoriteSongComponent,
     ProfileInfoCardComponent,
+    PhotosInAYearComponent,
+    PhotoPostComponent,
     NgIconsModule,
   ],
 })

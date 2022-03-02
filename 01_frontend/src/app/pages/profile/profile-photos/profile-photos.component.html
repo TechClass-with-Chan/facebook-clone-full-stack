@@ -1,1 +1,42 @@
-<p>profile-photos works!</p>
+<div class="flex flex-row justify-between">
+  <!-- Category -->
+  <div class="flex h-10 flex-row gap-4">
+    <div
+      class="rounded-full bg-selected px-5 text-center text-xl leading-10 text-white hover:cursor-pointer hover:bg-selected hover:text-white"
+    >
+      All photos
+    </div>
+    <div
+      class="rounded-full px-5 text-center text-xl leading-10 text-highlight hover:cursor-pointer hover:bg-selected hover:text-white"
+    >
+      Photos with Elon
+    </div>
+    <div
+      class="rounded-full px-5 text-center text-xl leading-10 text-highlight hover:cursor-pointer hover:bg-selected hover:text-white"
+    >
+      Albums
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div class="flex flex-row gap-5">
+    <ng-icon
+      class="self-center text-light hover:cursor-pointer hover:text-highlight"
+      size="36"
+      strokeWidth="2"
+      name="hero-search"
+    ></ng-icon>
+    <ng-icon
+      class="self-center text-light hover:cursor-pointer hover:text-highlight"
+      size="36"
+      strokeWidth="2"
+      name="hero-adjustments"
+    ></ng-icon>
+  </div>
+</div>
+
+<!-- Photos -->
+<div class="mt-10 flex h-auto w-full flex-col gap-10">
+  <app-photos-in-a-year></app-photos-in-a-year>
+  <app-photos-in-a-year></app-photos-in-a-year>
+</div>

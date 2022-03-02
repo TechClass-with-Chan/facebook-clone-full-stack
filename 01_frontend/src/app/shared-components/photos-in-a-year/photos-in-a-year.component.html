@@ -1,0 +1,22 @@
+<div class="flex h-auto w-full flex-row">
+  <!-- Year -->
+  <div class="flex w-20 flex-col">
+    <span class="block flex-none text-center text-3xl font-bold text-light"
+      >2022</span
+    >
+    <div
+      class="mt-8 w-0 grow self-center rounded-full border-[1px] border-light"
+    ></div>
+  </div>
+
+  <!-- Photos -->
+  <div
+    class="ml-8 w-full columns-1 break-inside-avoid gap-5 sm:columns-2 xl:columns-3"
+  >
+    <ng-container *ngFor="let photoPost of photoPosts">
+      <div class="mt-5 first:mt-0">
+        <app-photo-post [photoPost]="photoPost"></app-photo-post>
+      </div>
+    </ng-container>
+  </div>
+</div>
