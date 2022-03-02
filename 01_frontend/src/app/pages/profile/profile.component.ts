@@ -10,15 +10,15 @@ export class ProfileComponent implements OnInit {
   navbarItems: Array<NavbarItem> = [
     {
       text: 'Chronicle',
-      url: '/profile/chronicle',
+      url: '/friends/profile/chronicle',
     },
     {
       text: 'Information',
-      url: '/profile/info',
+      url: '/friends/profile/info',
     },
     {
       text: 'Photos',
-      url: '/profile/photos',
+      url: '/friends/profile/photos',
     },
     {
       text: 'More',

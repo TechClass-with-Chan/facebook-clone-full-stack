@@ -8,7 +8,7 @@ import { ProfileComponent } from './profile.component';
 
 const profileRoutes: Routes = [
   {
-    path: 'profile',
+    path: 'friends/profile',
     component: ProfileComponent,
     children: [
       { path: 'chronicle', component: ProfileChronicleComponent },
