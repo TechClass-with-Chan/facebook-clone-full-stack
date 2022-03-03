@@ -45,6 +45,7 @@ import {
   HeroPlay,
   HeroChevronDown,
   HeroAcademicCap,
+  HeroBell,
 } from '@ng-icons/heroicons';
 import { FriendRequestComponent } from './story-event-request/friend-request/friend-request.component';
 import { RouterModule } from '@angular/router';
@@ -114,6 +115,7 @@ import { ChatContactComponent } from './chat-contact/chat-contact.component';
       HeroPlay,
       HeroChevronDown,
       HeroAcademicCap,
+      HeroBell,
     }),
   ],
   exports: [
