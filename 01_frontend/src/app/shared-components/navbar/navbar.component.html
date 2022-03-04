@@ -1,12 +1,13 @@
 <div class="flex h-12 flex-row gap-12 border-b-2 border-b-muted text-[23px]">
-  <ng-container *ngFor="let nav of navbarItems">
+  <ng-container *ngFor="let nav of navbarItems; let i = index">
     <a
       [routerLink]="nav.url"
       routerLinkActive="opacity-100 font-medium border-b-highlight border-b-2"
       [routerLinkActiveOptions]="{ exact: true }"
+      [id]="i"
+      [ngClass]="{ hidden: i > 2, 'sm:block': i < 4, 'xl:block': i < 5 }"
       class="block h-12 whitespace-nowrap leading-10 opacity-50 hover:border-b-2 hover:border-b-highlight hover:opacity-100"
       >{{ nav.text }}</a
     >
   </ng-container>
 </div>
-

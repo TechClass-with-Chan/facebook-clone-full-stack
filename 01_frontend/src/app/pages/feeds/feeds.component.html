@@ -1,4 +1,4 @@
-<div class="min-h-screen bg-[#F6F6F9] p-10 pb-20">
+<div class="min-h-screen bg-[#F6F6F9] p-2 sm:p-10 md:pb-20">
   <!-- Navigator -->
   <div>
     <app-navbar [navbarItems]="navbarItems"></app-navbar>
@@ -20,7 +20,7 @@
     </div>
 
     <!-- Stories, Events, Requests -->
-    <div class="sticky top-6 ml-6 h-min flex-none">
+    <div class="sticky top-6 ml-6 hidden h-min flex-none xl:block">
       <app-story-event-request></app-story-event-request>
     </div>
   </div>

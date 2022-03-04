@@ -56,7 +56,7 @@
         }}</span>
       </div>
       <div
-        class="flex flex-row text-light hover:cursor-pointer hover:text-highlight"
+        class="hidden flex-row text-light hover:cursor-pointer hover:text-highlight sm:flex"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-annotation"></ng-icon>
         <span class="ml-2 self-center text-xl font-medium leading-8">{{
@@ -64,7 +64,7 @@
         }}</span>
       </div>
       <div
-        class="flex flex-row text-light hover:cursor-pointer hover:text-highlight"
+        class="hidden flex-row text-light hover:cursor-pointer hover:text-highlight sm:flex"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-share"></ng-icon>
         <span class="ml-2 self-center text-xl font-medium leading-8">{{
@@ -73,10 +73,10 @@
       </div>
     </div>
 
-    <div class="flex flex-row">
+    <div class="flex-row sm:flex">
       <ng-icon
         [ngClass]="feed.stared ? 'text-highlight' : 'text-light'"
-        class="self-center text-light hover:cursor-pointer hover:text-highlight"
+        class="hidden self-center text-light hover:cursor-pointer hover:text-highlight"
         size="38"
         strokeWidth="1"
         name="hero-star"
