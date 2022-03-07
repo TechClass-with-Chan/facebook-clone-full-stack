@@ -26,6 +26,7 @@ import { FeedsComponent } from './pages/feeds/feeds.component';
 import { FriendsComponent } from './pages/friends/friends.component';
 import { SharedComponentsModule } from './shared-components/shared-components.module';
 import { TestComponent } from './test/test.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 Sentry.init({
@@ -61,6 +62,7 @@ Sentry.init({
     provideMessaging(() => getMessaging()),
     providePerformance(() => getPerformance()),
     provideStorage(() => getStorage()),
+    NoopAnimationsModule,
   ],
   providers: [
     ScreenTrackingService,

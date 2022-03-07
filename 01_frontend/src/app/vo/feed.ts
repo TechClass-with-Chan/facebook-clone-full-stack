@@ -4,7 +4,7 @@ export interface Feed {
   verified: boolean;
   postTime: number;
   post: string;
-  pictures: string[];
+  pictures?: string[];
   thumbUps: number;
   comments: number;
   shares: number;

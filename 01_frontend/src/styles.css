@@ -10,6 +10,9 @@
   .bbr {
     @apply border border-red-500;
   }
+  .dialog-panel .mat-dialog-container {
+    @apply scrollbar overflow-x-hidden overflow-y-scroll p-0 lg:overflow-hidden;
+  }
 }
 
 @layer utilities {

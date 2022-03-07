@@ -1,4 +1,4 @@
-<div class="rounded-lg border border-muted bg-white p-6">
+<div>
   <!-- User -->
   <div class="flex h-14 flex-row">
     <img
@@ -38,7 +38,10 @@
   </div>
 
   <!-- Picture -->
-  <div class="scrollbar mt-5 flex flex-row gap-4 overflow-x-scroll">
+  <div
+    *ngIf="feed.pictures"
+    class="scrollbar mt-5 flex flex-row gap-4 overflow-x-scroll"
+  >
     <ng-container *ngFor="let picture of feed.pictures">
       <img class="h-64 rounded-md object-cover" [src]="picture" alt="" />
     </ng-container>
@@ -48,6 +51,7 @@
   <div class="mt-9 flex flex-row justify-between">
     <div class="flex flex-row gap-11">
       <div
+        *ngIf="showThumbUp"
         class="flex flex-row text-light hover:cursor-pointer hover:text-highlight"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-thumb-up"></ng-icon>
@@ -56,6 +60,7 @@
         }}</span>
       </div>
       <div
+        *ngIf="showComment"
         class="hidden flex-row text-light hover:cursor-pointer hover:text-highlight sm:flex"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-annotation"></ng-icon>
@@ -64,6 +69,7 @@
         }}</span>
       </div>
       <div
+        *ngIf="showShare"
         class="hidden flex-row text-light hover:cursor-pointer hover:text-highlight sm:flex"
       >
         <ng-icon size="38" strokeWidth="1" name="hero-share"></ng-icon>
@@ -73,7 +79,7 @@
       </div>
     </div>
 
-    <div class="flex-row sm:flex">
+    <div *ngIf="showStar" class="flex-row sm:flex">
       <ng-icon
         [ngClass]="feed.stared ? 'text-highlight' : 'text-light'"
         class="hidden self-center text-light hover:cursor-pointer hover:text-highlight"

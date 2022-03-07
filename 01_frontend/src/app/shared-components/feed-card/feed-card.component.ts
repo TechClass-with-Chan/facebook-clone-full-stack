@@ -8,6 +8,10 @@ import { Feed } from 'src/app/vo/feed';
 })
 export class FeedCardComponent implements OnInit {
   @Input() feed!: Feed;
+  @Input() showThumbUp: boolean = true;
+  @Input() showComment: boolean = true;
+  @Input() showShare: boolean = true;
+  @Input() showStar: boolean = true;
 
   constructor() {}
 

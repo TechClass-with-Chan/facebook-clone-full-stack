@@ -1,0 +1,41 @@
+<div class="flex flex-col lg:flex-row h-full">
+  <img
+    class="w-full grow rounded-t-sm object-cover lg:w-1/2 lg:rounded-l-sm lg:rounded-r-none"
+    src="https://cdn.vox-cdn.com/thumbor/DI0UtdvSSzZz86PAsS0KMS97izM=/0x0:3926x3123/920x613/filters:focal(1649x1248:2277x1876):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70305223/1234657391.0.jpg"
+    alt=""
+  />
+  <div class="lg:scrollbar flex-none bg-white lg:w-1/2 lg:overflow-y-scroll lg:overflow-hidden">
+    <!-- Feed -->
+    <div class="p-7">
+      <app-feed-card [feed]="feed" [showStar]="false"></app-feed-card>
+    </div>
+
+    <!-- View all comments -->
+    <div
+      class="flex h-14 flex-row justify-between border-t border-b border-muted px-7"
+    >
+      <a class="self-center text-base text-highlight" href="#"
+        >View all comments</a
+      >
+      <span class="self-center text-base text-light">56 of 98</span>
+    </div>
+
+    <!-- Comments -->
+    <div class="flex flex-col gap-7 p-7 h-fit">
+      <ng-container>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+      </ng-container>
+    </div>
+
+    <!-- Post comment -->
+    <div class="rounded-b-sm border-t border-muted">
+      <app-create-post></app-create-post>
+    </div>
+  </div>
+</div>

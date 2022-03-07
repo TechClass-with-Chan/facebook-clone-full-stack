@@ -1,6 +1,4 @@
-<div
-  class="flex h-20 flex-row rounded-lg border border-muted bg-white px-6 py-4 shadow-small"
->
+<div class="flex h-20 flex-row bg-white px-6 py-4 rounded-md">
   <img
     class="h-12 w-12 flex-none rounded-full object-cover"
     src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Sergey_Brin_cropped.jpg"
@@ -13,7 +11,7 @@
     type="text"
   />
 
-  <div class="mr-6 hidden sm:flex flex-row justify-between gap-3">
+  <div class="mr-6 hidden flex-row justify-between gap-3 sm:flex">
     <ng-icon
       class="self-center text-light hover:cursor-pointer hover:text-highlight"
       size="30"
@@ -34,7 +32,9 @@
     ></ng-icon>
   </div>
 
-  <div class="md:flex hidden w-20 flex-row justify-center border-l border-muted">
+  <div
+    class="hidden w-20 flex-row justify-center border-l border-muted md:flex"
+  >
     <ng-icon
       class="self-center text-highlight hover:cursor-pointer"
       size="30"
@@ -43,7 +43,7 @@
     ></ng-icon>
   </div>
 
-  <div class="md:flex hidden w-14 flex-row justify-end border-l border-muted">
+  <div class="hidden w-14 flex-row justify-end border-l border-muted md:flex">
     <ng-icon
       class="self-center text-highlight hover:cursor-pointer"
       size="30"
