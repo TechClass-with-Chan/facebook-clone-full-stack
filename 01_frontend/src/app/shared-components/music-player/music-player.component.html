@@ -1,5 +1,5 @@
 <div
-  class="fixed bottom-0 left-0 hidden h-20 w-screen flex-row justify-between bg-selected px-16 opacity-90 md:flex"
+  class="fixed bottom-0 left-0 hidden h-20 w-screen flex-row justify-between bg-selected bg-opacity-90 px-16 md:flex"
 >
   <!-- Avatar -->
   <div class="flex flex-row self-center">
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div
-      class="hidden w-20 flex-row justify-center hover:cursor-pointer hover:bg-[#2D4373] hover:bg-opacity-50 lg:flex"
+      class="relative hidden w-20 flex-row justify-center hover:cursor-pointer hover:bg-[#2D4373] hover:bg-opacity-50 lg:flex"
     >
       <ng-icon
         class="self-center text-white opacity-60 hover:opacity-100"
@@ -40,6 +40,9 @@
         strokeWidth="1.5"
         name="hero-collection"
       ></ng-icon>
+      <div class="absolute -top-80 left-0 h-80 rounded-t-lg bg-[#2D4373] p-6">
+        <app-music-list></app-music-list>
+      </div>
     </div>
     <div
       class="flex w-20 flex-row justify-center hover:cursor-pointer hover:bg-[#2D4373] hover:bg-opacity-50"
@@ -76,7 +79,7 @@
   <!-- Player -->
   <div class="hidden h-full flex-row gap-10 lg:flex">
     <!-- Controls -->
-    <div class="xl:flex hidden flex-none flex-row justify-center gap-1">
+    <div class="hidden flex-none flex-row justify-center gap-1 xl:flex">
       <ng-icon
         class="self-center text-white opacity-50 hover:cursor-pointer hover:opacity-100"
         size="32"

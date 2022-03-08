@@ -59,6 +59,7 @@ import { SidemenuItemComponent } from './sidemenu-item/sidemenu-item.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { FriendRequestComponent } from './story-event-request/friend-request/friend-request.component';
 import { StoryEventRequestComponent } from './story-event-request/story-event-request.component';
+import { MusicListComponent } from './music-list/music-list.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { StoryEventRequestComponent } from './story-event-request/story-event-re
     ChatContactComponent,
     PhotoPostDialogComponent,
     CommentItemComponent,
+    MusicListComponent,
   ],
   imports: [
     CommonModule,
@@ -143,6 +145,7 @@ import { StoryEventRequestComponent } from './story-event-request/story-event-re
     ChatContactComponent,
     PhotoPostDialogComponent,
     CommentItemComponent,
+    MusicListComponent,
     NgIconsModule,
   ],
 })
