@@ -32,7 +32,10 @@
       </div>
     </div>
     <div
-      class="relative hidden w-20 flex-row justify-center hover:cursor-pointer hover:bg-[#2D4373] hover:bg-opacity-50 lg:flex"
+      (mouseover)="mouseOverMusicList()"
+      (mouseout)="mouseOutMusicList()"
+      [ngClass]="{ 'bg-[#2D4373] bg-opacity-100': showMusicList }"
+      class="relative hidden w-20 flex-row justify-center hover:cursor-pointer lg:flex"
     >
       <ng-icon
         class="self-center text-white opacity-60 hover:opacity-100"
@@ -40,7 +43,10 @@
         strokeWidth="1.5"
         name="hero-collection"
       ></ng-icon>
-      <div class="absolute -top-80 left-0 h-80 rounded-t-lg bg-[#2D4373] p-6">
+      <div
+        [ngClass]="{ block: showMusicList, hidden: !showMusicList }"
+        class="absolute -top-[600px] left-0 h-[600px] rounded-t-lg bg-[#2D4373]"
+      >
         <app-music-list></app-music-list>
       </div>
     </div>
