@@ -49,9 +49,15 @@
 
       <div class="mt-7 flex flex-col gap-6">
         <ng-container *ngFor="let publication of publications">
-          <app-feed-card [feed]="publication"></app-feed-card>
-          <app-feed-card [feed]="publication"></app-feed-card>
-          <app-feed-card [feed]="publication"></app-feed-card>
+          <div class="rounded-lg border border-muted bg-white p-6">
+            <app-feed-card [feed]="publication"></app-feed-card>
+          </div>
+          <div class="rounded-lg border border-muted bg-white p-6">
+            <app-feed-card [feed]="publication"></app-feed-card>
+          </div>
+          <div class="rounded-lg border border-muted bg-white p-6">
+            <app-feed-card [feed]="publication"></app-feed-card>
+          </div>
         </ng-container>
       </div>
     </div>
